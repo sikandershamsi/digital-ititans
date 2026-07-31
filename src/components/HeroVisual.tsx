@@ -59,21 +59,16 @@ export function HeroVisual() {
         </g>
 
         <circle cx="210" cy="210" r="58" fill="rgba(3,3,28,0.85)" stroke="rgba(255,255,255,0.12)" />
-        <image
-          href="/brand/logo-mark.png"
-          x="178"
-          y="172"
-          width="64"
-          height="76"
-          opacity="0.95"
-        />
         <text
           x="210"
-          y="248"
+          y="216"
           textAnchor="middle"
-          fill="rgba(255,255,255,0.55)"
-          fontSize="8"
-          letterSpacing="1.6"
+          dominantBaseline="middle"
+          fill="rgba(255,255,255,0.85)"
+          fontSize="11"
+          letterSpacing="2.4"
+          fontFamily="var(--font-display), system-ui"
+          fontWeight="600"
         >
           GROWTH
         </text>
