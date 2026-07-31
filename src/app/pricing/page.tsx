@@ -23,11 +23,11 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-ink pb-20 pt-32 text-white md:pb-28 md:pt-40">
+      <section className="relative overflow-hidden bg-ink pb-14 pt-28 text-white sm:pb-20 sm:pt-32 md:pb-28 md:pt-40">
         <div className="absolute inset-0 hero-atmosphere" />
-        <div className="relative mx-auto max-w-7xl px-5 md:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal">Pricing</p>
-          <h1 className="mt-4 max-w-4xl font-display text-4xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="mt-4 max-w-4xl font-display text-[1.75rem] font-semibold tracking-tight sm:text-4xl md:text-6xl">
             {pricingIntro.title}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
@@ -43,7 +43,7 @@ export default function PricingPage() {
       </section>
 
       <section className="section-wash py-16 md:py-20">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-2xl font-semibold md:text-3xl">
               What Every iTitans Plan Includes
@@ -82,8 +82,8 @@ export default function PricingPage() {
         packages={seoPackages}
       />
 
-      <section className="bg-mist/40 py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="bg-mist/40 py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               Digital Marketing & Paid Media
@@ -112,8 +112,8 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="bg-paper py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="bg-paper py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               Mobile App Development
@@ -151,8 +151,8 @@ export default function PricingPage() {
         </div>
       </section>
 
-      <section className="section-wash py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="section-wash py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               Prefer a Dedicated Team?
@@ -196,8 +196,8 @@ function PackageSection({
   tint?: boolean;
 }) {
   return (
-    <section className={`${tint ? "bg-mist/40" : "bg-paper"} py-20 md:py-28`}>
-      <div className="mx-auto max-w-7xl px-5 md:px-8">
+    <section className={`${tint ? "bg-mist/40" : "bg-paper"} py-14 sm:py-20 md:py-28`}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
         <Reveal>
           <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">{title}</h2>
           <p className="mt-4 max-w-2xl text-slate">{description}</p>

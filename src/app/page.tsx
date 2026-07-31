@@ -19,11 +19,16 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-atmosphere" />
         <div className="absolute inset-0 hero-grid" />
         <div className="absolute inset-0 noise" />
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 opacity-40 sm:h-48 md:hidden">
+          <div className="mx-auto h-full max-w-xs">
+            <HeroVisual />
+          </div>
+        </div>
         <div className="absolute inset-y-0 right-0 hidden w-[48%] lg:block">
           <HeroVisual />
         </div>
 
-        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-5 pb-24 pt-28 md:px-8 md:pb-28 md:pt-32">
+        <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-4 pb-28 pt-24 sm:px-5 sm:pb-24 sm:pt-28 md:px-8 md:pb-28 md:pt-32">
           <div className="max-w-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -31,23 +36,23 @@ export default function HomePage() {
               alt="iTitans Digital"
               width={600}
               height={207}
-              className="h-14 w-auto object-contain sm:h-16 md:h-[4.75rem]"
+              className="h-11 w-auto max-w-[min(100%,16rem)] object-contain sm:h-14 sm:max-w-[18rem] md:h-[4.75rem] md:max-w-none"
             />
           </div>
           <TextReveal
             as="h1"
             text="Full-Service Performance Marketing Agency and AI Automation Partner"
-            className="mt-7 max-w-3xl font-display text-3xl font-semibold leading-[1.15] tracking-tight text-white/95 sm:text-4xl md:text-5xl"
+            className="mt-6 max-w-3xl font-display text-[1.75rem] font-semibold leading-[1.15] tracking-tight text-white/95 sm:mt-7 sm:text-4xl md:text-5xl"
             stagger={38}
           />
           <Reveal delay={280} variant="blur">
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
+            <p className="mt-5 max-w-xl text-[0.95rem] leading-relaxed text-white/70 sm:mt-6 sm:text-base md:text-lg">
               We turn traffic into revenue and manual work into automated systems. Performance
               marketing, custom development, and business AI automation under one accountable team.
             </p>
           </Reveal>
           <Reveal delay={420}>
-            <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+            <div className="mt-8 flex w-full max-w-md flex-col gap-3 sm:mt-9 sm:max-w-none sm:flex-row sm:items-center sm:gap-4">
               <Button href="/contact">Get My Free Growth Plan</Button>
               <Button href="/contact" variant="ghost">
                 Talk to a Strategist
@@ -67,13 +72,13 @@ export default function HomePage() {
         </div>
       </div>
 
-      <section className="section-wash py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="section-wash py-14 sm:py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal variant="clip">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">
+            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-deep sm:text-sm">
               Why iTitans Digital
             </p>
-            <h2 className="mt-4 max-w-3xl font-display text-3xl font-semibold tracking-tight md:text-5xl">
+            <h2 className="mt-3 max-w-3xl font-display text-2xl font-semibold tracking-tight sm:mt-4 sm:text-3xl md:text-5xl">
               Marketing That Performs. Automation That Compounds.
             </h2>
           </Reveal>
@@ -93,24 +98,24 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-paper py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="bg-paper py-14 sm:py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-deep sm:text-sm">
                   Services
                 </p>
-                <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-5xl">
+                <h2 className="mt-3 max-w-2xl font-display text-2xl font-semibold tracking-tight sm:mt-4 sm:text-3xl md:text-5xl">
                   Performance Marketing and AI Services Built for Revenue
                 </h2>
               </div>
-              <Button href="/services" variant="light">
+              <Button href="/services" variant="light" className="w-full sm:w-auto">
                 View All Services
               </Button>
             </div>
           </Reveal>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4" style={{ perspective: "1000px" }}>
+          <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 sm:gap-5 xl:grid-cols-4">
             {services.map((service, index) => (
               <Reveal key={service.slug} delay={index * 55} variant="scale">
                 <ServiceCard service={service} />
@@ -121,7 +126,7 @@ export default function HomePage() {
       </section>
 
       <section className="bg-ink py-20 text-white md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal">Results</p>
             <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight md:text-5xl">
@@ -143,8 +148,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-wash py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="section-wash py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">Process</p>
             <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold tracking-tight md:text-5xl">
@@ -167,8 +172,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-paper py-20 md:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 md:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+      <section className="bg-paper py-14 sm:py-20 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-5 md:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">
               Who We Serve
@@ -224,8 +229,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-mist/40 py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="bg-mist/40 py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">
               Testimonials
@@ -252,8 +257,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-wash py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-5 md:px-8">
+      <section className="section-wash py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-3xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <p className="text-center text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">
               FAQ

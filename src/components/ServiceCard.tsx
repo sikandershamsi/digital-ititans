@@ -29,17 +29,21 @@ const loops: Record<string, "pulse" | "radar" | "chat" | "chart"> = {
 
 export function ServiceCard({ service }: { service: Service; index?: number }) {
   return (
-    <SpotlightCard className="h-full rounded-[1.75rem] border border-line bg-paper-elevated">
-      <Link href={`/services/${service.slug}`} className="group relative block h-full p-7">
-        <div className="absolute -right-2 top-2 h-24 w-24 opacity-70 transition duration-500 group-hover:opacity-100 group-hover:scale-110">
+    <SpotlightCard className="h-full rounded-2xl border border-line bg-paper-elevated sm:rounded-[1.75rem]">
+      <Link href={`/services/${service.slug}`} className="group relative block h-full p-5 sm:p-7">
+        <div className="absolute -right-2 top-2 hidden h-20 w-20 opacity-60 transition duration-500 sm:block sm:h-24 sm:w-24 sm:opacity-70 group-hover:opacity-100 group-hover:scale-110">
           <LoopGif variant={loops[service.slug] ?? "pulse"} className="h-full w-full" />
         </div>
-        <span className="relative grid h-12 w-12 place-items-center rounded-2xl bg-ink text-lg text-amber transition duration-300 group-hover:shadow-[0_0_24px_rgba(110,193,228,0.45)]">
+        <span className="relative grid h-11 w-11 place-items-center rounded-2xl bg-ink text-lg text-amber transition duration-300 sm:h-12 sm:w-12 group-hover:shadow-[0_0_24px_rgba(110,193,228,0.45)]">
           {icons[service.slug] ?? "●"}
         </span>
-        <h3 className="mt-6 font-display text-xl font-semibold text-ink">{service.title}</h3>
-        <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-slate">{service.summary}</p>
-        <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal transition group-hover:gap-3">
+        <h3 className="mt-5 font-display text-lg font-semibold text-ink sm:mt-6 sm:text-xl">
+          {service.title}
+        </h3>
+        <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate sm:mt-3">
+          {service.summary}
+        </p>
+        <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-teal transition sm:mt-6 group-hover:gap-3">
           Explore service <span aria-hidden>→</span>
         </span>
       </Link>

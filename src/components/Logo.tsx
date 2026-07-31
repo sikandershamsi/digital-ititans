@@ -24,7 +24,7 @@ export function Logo({ className = "", href = "/", priority = false }: LogoProps
       width={LOGO.w}
       height={LOGO.h}
       priority={priority}
-      className={`h-9 w-auto object-contain md:h-10 ${className}`}
+      className={`h-9 w-auto max-w-full object-contain md:h-10 ${className}`}
     />
   );
 

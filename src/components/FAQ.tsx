@@ -17,7 +17,7 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
               onClick={() => setOpen(isOpen ? null : index)}
               aria-expanded={isOpen}
             >
-              <span className="font-display text-lg font-semibold text-ink md:text-xl">
+              <span className="font-display text-base font-semibold text-ink sm:text-lg md:text-xl">
                 {item.q}
               </span>
               <span

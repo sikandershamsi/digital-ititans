@@ -14,9 +14,9 @@ export default function ContactPage() {
     <>
       <section className="relative overflow-hidden bg-ink pb-16 pt-32 text-white md:pb-20 md:pt-40">
         <div className="absolute inset-0 hero-atmosphere" />
-        <div className="relative mx-auto max-w-7xl px-5 md:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal">Contact</p>
-          <h1 className="mt-4 max-w-3xl font-display text-4xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="mt-4 max-w-3xl font-display text-[1.75rem] font-semibold tracking-tight sm:text-4xl md:text-6xl">
             Ready to Grow Faster With Improved Efficiency?
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
@@ -27,7 +27,7 @@ export default function ContactPage() {
       </section>
 
       <section className="section-wash py-16 md:py-24">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 md:px-8 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-5 md:px-8 lg:grid-cols-[0.85fr_1.15fr]">
           <Reveal>
             <div className="space-y-8">
               <div>

@@ -17,7 +17,14 @@ export function SpotlightCard({
   const onMove = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
       const el = ref.current;
-      if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+      if (!el) return;
+      if (
+        window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+        window.matchMedia("(pointer: coarse)").matches ||
+        window.matchMedia("(max-width: 640px)").matches
+      ) {
+        return;
+      }
 
       cancelAnimationFrame(frame.current);
       frame.current = requestAnimationFrame(() => {
@@ -52,7 +59,6 @@ export function SpotlightCard({
       className={`spotlight-card shimmer-border ${className}`}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
-      style={{ perspective: "800px" }}
     >
       {children}
     </div>

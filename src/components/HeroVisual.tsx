@@ -6,7 +6,7 @@
  */
 export function HeroVisual() {
   return (
-    <div className="relative h-full min-h-[420px] w-full" aria-hidden>
+    <div className="relative h-full min-h-[220px] w-full sm:min-h-[320px] lg:min-h-[420px]" aria-hidden>
       <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=70')] bg-cover bg-center opacity-30" />
       <div className="absolute inset-0 bg-gradient-to-l from-transparent via-ink/50 to-ink" />
 

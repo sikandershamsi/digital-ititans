@@ -44,6 +44,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -51,6 +52,47 @@ body {
   color: var(--foreground);
   font-family: var(--font-body), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile-friendly containers & touch */
+@media (max-width: 640px) {
+  .magnetic-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .spotlight-card {
+    transform: none !important;
+  }
+
+  .spotlight-card::after {
+    display: none;
+  }
+
+  .shimmer-border::before {
+    display: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .magnetic-btn,
+  .magnetic-btn .magnetic-inner {
+    transform: none !important;
+  }
+
+  .spotlight-card {
+    transform: none !important;
+  }
 }
 
 h1,

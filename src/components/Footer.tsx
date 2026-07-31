@@ -7,8 +7,8 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink text-white">
       <div className="pointer-events-none absolute inset-0 hero-grid opacity-40" />
-      <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-5 sm:py-16 md:px-8 md:py-20">
+        <div className="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex">
               <Image
@@ -16,7 +16,7 @@ export function Footer() {
                 alt="iTitans Digital"
                 width={1920}
                 height={662}
-                className="h-10 w-auto object-contain"
+                className="h-9 w-auto max-w-[min(100%,14rem)] object-contain sm:h-10 sm:max-w-none"
               />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
@@ -68,9 +68,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-white/45 md:flex-row md:items-center md:justify-between">
+        <div className="mt-10 flex flex-col gap-4 border-t border-white/10 pt-6 text-sm text-white/45 sm:mt-14 sm:pt-8 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
             <Link href="/privacy-policy" className="transition hover:text-white">
               Privacy Policy
             </Link>

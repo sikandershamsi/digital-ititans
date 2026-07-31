@@ -32,17 +32,17 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <>
-      <section className="relative overflow-hidden bg-ink pb-20 pt-32 text-white md:pb-28 md:pt-40">
+      <section className="relative overflow-hidden bg-ink pb-14 pt-28 text-white sm:pb-20 sm:pt-32 md:pb-28 md:pt-40">
         <div className="absolute inset-0 hero-atmosphere" />
         <div className="absolute inset-0 hero-grid opacity-40" />
-        <div className="relative mx-auto max-w-7xl px-5 md:px-8">
+        <div className="relative mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal">
             <Link href="/services" className="hover:text-white">
               Services
             </Link>{" "}
             / {service.shortTitle}
           </p>
-          <h1 className="mt-4 max-w-4xl font-display text-4xl font-semibold tracking-tight md:text-6xl">
+          <h1 className="mt-4 max-w-4xl font-display text-[1.75rem] font-semibold tracking-tight sm:text-4xl md:text-6xl">
             {service.hero}
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">{service.summary}</p>
@@ -55,8 +55,8 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section-wash py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="section-wash py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               Every Engagement Includes
@@ -75,8 +75,8 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-paper py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+      <section className="bg-paper py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               What We Deliver
@@ -96,7 +96,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       <section className="bg-ink py-20 text-white md:py-28">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
               How We Work
@@ -116,8 +116,8 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="section-wash py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-5 md:px-8">
+      <section className="section-wash py-14 sm:py-20 md:py-28">
+        <div className="mx-auto max-w-3xl px-4 sm:px-5 md:px-8">
           <Reveal>
             <h2 className="text-center font-display text-3xl font-semibold tracking-tight md:text-4xl">
               Frequently Asked Questions
@@ -130,7 +130,7 @@ export default async function ServiceDetailPage({ params }: Props) {
       </section>
 
       <section className="bg-paper pb-8 pt-4 md:pb-12">
-        <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <h2 className="font-display text-2xl font-semibold">Related Services</h2>
           <div className="mt-6 flex flex-wrap gap-3">
             {related.map((item) => (

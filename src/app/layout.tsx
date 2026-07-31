@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque, Figtree } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -17,6 +17,13 @@ const body = Figtree({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#03031c",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -44,10 +51,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-paper text-ink">
+      <body className="flex min-h-full flex-col overflow-x-clip bg-paper text-ink">
         <ScrollProgress />
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="w-full min-w-0 flex-1">{children}</main>
         <Footer />
       </body>
     </html>

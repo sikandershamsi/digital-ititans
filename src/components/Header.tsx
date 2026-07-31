@@ -25,6 +25,14 @@ export function Header() {
     };
   }, [open]);
 
+  useEffect(() => {
+    const onResize = () => {
+      if (window.innerWidth >= 1024) setOpen(false);
+    };
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
+  }, []);
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
@@ -33,8 +41,10 @@ export function Header() {
           : "border-b border-transparent bg-ink/70 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 md:px-8">
-        <Logo priority className="h-8 md:h-9" />
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-[72px] sm:px-5 md:px-8">
+        <div className="min-w-0 flex-1">
+          <Logo priority className="h-7 max-w-[min(100%,11.5rem)] sm:h-8 sm:max-w-[14rem] md:h-9 md:max-w-none" />
+        </div>
 
         <nav className="hidden items-center gap-1 lg:flex">
           {site.nav.map((item) =>
@@ -52,7 +62,7 @@ export function Header() {
                   Services
                 </Link>
                 {servicesOpen && (
-                  <div className="absolute left-1/2 top-full z-50 w-[520px] -translate-x-1/2 pt-3">
+                  <div className="absolute left-1/2 top-full z-50 w-[min(520px,calc(100vw-2rem))] -translate-x-1/2 pt-3">
                     <div className="grid grid-cols-2 gap-1 rounded-2xl border border-white/10 bg-ink-soft/95 p-3 shadow-2xl backdrop-blur-xl">
                       {services.map((service) => (
                         <Link
@@ -79,7 +89,7 @@ export function Header() {
           )}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden shrink-0 items-center gap-3 lg:flex">
           <a
             href={site.phoneHref}
             className="text-sm font-medium text-white/70 transition hover:text-white"
@@ -96,8 +106,9 @@ export function Header() {
 
         <button
           type="button"
-          aria-label="Toggle menu"
-          className="grid h-11 w-11 place-items-center rounded-xl border border-white/15 text-white lg:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-white/15 text-white lg:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           <span className="sr-only">Menu</span>
@@ -110,14 +121,14 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="max-h-[calc(100vh-72px)] overflow-y-auto border-t border-white/10 bg-ink px-5 pb-8 lg:hidden">
+        <div className="max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain border-t border-white/10 bg-ink px-4 pb-8 sm:max-h-[calc(100dvh-72px)] sm:px-5 lg:hidden">
           <div className="flex flex-col gap-1 pt-4">
             {site.nav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-3 text-base font-medium text-white/90"
+                className="rounded-xl px-3 py-3.5 text-base font-medium text-white/90"
               >
                 {item.label}
               </Link>
@@ -128,15 +139,21 @@ export function Header() {
                 key={service.slug}
                 href={`/services/${service.slug}`}
                 onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-2.5 text-sm text-white/70"
+                className="rounded-xl px-3 py-3 text-sm text-white/70"
               >
                 {service.title}
               </Link>
             ))}
+            <a
+              href={site.phoneHref}
+              className="mt-4 rounded-xl px-3 py-3 text-sm font-medium text-amber"
+            >
+              {site.phone}
+            </a>
             <Link
               href="/contact"
               onClick={() => setOpen(false)}
-              className="mt-4 rounded-full bg-amber px-5 py-3 text-center text-sm font-semibold text-ink"
+              className="mt-2 rounded-full bg-amber px-5 py-3.5 text-center text-sm font-semibold text-ink"
             >
               Get My Free Growth Plan
             </Link>

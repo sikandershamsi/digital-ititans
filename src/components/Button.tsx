@@ -35,7 +35,13 @@ export function Button({ href, children, variant = "primary", className = "" }: 
 
   const onMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
     const el = ref.current;
-    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    if (!el) return;
+    if (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      window.matchMedia("(pointer: coarse)").matches
+    ) {
+      return;
+    }
     const rect = el.getBoundingClientRect();
     const x = e.clientX - rect.left - rect.width / 2;
     const y = e.clientY - rect.top - rect.height / 2;
@@ -51,11 +57,11 @@ export function Button({ href, children, variant = "primary", className = "" }: 
       href={href}
       onMouseMove={onMove}
       onMouseLeave={reset}
-      className={`magnetic-btn btn-sheen rounded-full px-6 py-3.5 text-sm font-semibold transition-colors duration-300 ${variants[variant]} ${className}`}
+      className={`magnetic-btn btn-sheen min-h-11 rounded-full px-5 py-3 text-sm font-semibold transition-colors duration-300 sm:px-6 sm:py-3.5 ${variants[variant]} ${className}`}
     >
-      <span className="magnetic-inner relative z-[1]">
+      <span className="magnetic-inner relative z-[1] text-center">
         {children}
-        <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-0.5">
+        <span aria-hidden className="transition-transform duration-300">
           →
         </span>
       </span>
