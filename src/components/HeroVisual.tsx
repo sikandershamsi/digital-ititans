@@ -15,7 +15,7 @@ export function HeroVisual() {
 
       <svg
         viewBox="0 0 420 420"
-        className="absolute inset-0 m-auto h-[88%] w-[88%] max-w-[480px] drop-shadow-[0_0_40px_rgba(15,159,138,0.25)]"
+        className="absolute inset-0 m-auto h-[88%] w-[88%] max-w-[480px] drop-shadow-[0_0_40px_rgba(110,193,228,0.2)]"
       >
         <defs>
           <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">

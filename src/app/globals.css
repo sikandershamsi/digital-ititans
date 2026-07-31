@@ -66,7 +66,8 @@ video {
 
 /* Mobile-friendly containers & touch */
 @media (max-width: 640px) {
-  .magnetic-btn {
+  .magnetic-btn.w-full,
+  .cta-stack .magnetic-btn {
     width: 100%;
     justify-content: center;
   }
@@ -111,10 +112,9 @@ h4,
 
 .hero-atmosphere {
   background:
-    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(76, 7, 107, 0.45), transparent 55%),
-    radial-gradient(ellipse 50% 45% at 15% 80%, rgba(110, 193, 228, 0.2), transparent 50%),
-    radial-gradient(ellipse 40% 30% at 90% 70%, rgba(42, 33, 64, 0.95), transparent 60%),
-    linear-gradient(160deg, #020214 0%, #0b0b28 45%, #03031c 100%);
+    radial-gradient(ellipse 70% 55% at 78% 28%, rgba(76, 7, 107, 0.28), transparent 58%),
+    radial-gradient(ellipse 45% 40% at 12% 78%, rgba(110, 193, 228, 0.12), transparent 52%),
+    linear-gradient(165deg, #050816 0%, #0a1024 48%, #070b18 100%);
   background-size: 120% 120%;
   animation: atmosphere-drift 18s ease-in-out infinite alternate;
 }

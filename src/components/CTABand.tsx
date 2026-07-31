@@ -30,7 +30,7 @@ export function CTABand({
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:mt-5 sm:text-base md:text-lg">
           {body}
         </p>
-        <div className="mt-8 flex w-full max-w-md flex-col items-stretch justify-center gap-3 sm:mx-auto sm:max-w-none sm:flex-row sm:items-center sm:gap-4">
+        <div className="mt-8 flex cta-stack w-full max-w-md flex-col items-stretch justify-center gap-3 sm:mx-auto sm:max-w-none sm:flex-row sm:items-center sm:gap-4">
           <Button href={primaryHref}>{primary}</Button>
           <Button href={site.phoneHref} variant="ghost">
             Call {site.phone}
