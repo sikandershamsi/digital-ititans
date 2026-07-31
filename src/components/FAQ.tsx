@@ -29,7 +29,7 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
               </span>
             </button>
             <div
-              className={`grid transition-all duration-300 ${
+              className={`grid transition-[grid-template-rows,opacity] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
                 isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
               }`}
             >

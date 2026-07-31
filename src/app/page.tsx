@@ -1,8 +1,13 @@
+import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { Button } from "@/components/Button";
 import { CTABand } from "@/components/CTABand";
 import { FAQ } from "@/components/FAQ";
+import { HeroVisual } from "@/components/HeroVisual";
+import { LoopGif } from "@/components/LoopGif";
 import { Reveal } from "@/components/Reveal";
 import { ServiceCard } from "@/components/ServiceCard";
+import { SpotlightCard } from "@/components/SpotlightCard";
+import { TextReveal } from "@/components/TextReveal";
 import { homeFaqs, industries, processSteps, testimonials } from "@/data/about";
 import { services } from "@/data/services";
 import { site } from "@/data/site";
@@ -15,33 +20,38 @@ export default function HomePage() {
         <div className="absolute inset-0 hero-grid" />
         <div className="absolute inset-0 noise" />
         <div className="absolute inset-y-0 right-0 hidden w-[48%] lg:block">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80')] bg-cover bg-center opacity-35" />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent via-ink/40 to-ink" />
-          <div className="float-slow absolute bottom-[18%] right-[12%] h-56 w-56 rounded-full border border-teal/30 bg-teal/10 blur-0" />
-          <div className="absolute bottom-[22%] right-[16%] h-40 w-40 rounded-full bg-amber/20 blur-2xl" />
+          <HeroVisual />
         </div>
 
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-5 pb-24 pt-28 md:px-8 md:pb-28 md:pt-32">
-          <p className="font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-            iTitans <span className="text-teal">Digital</span>
+          <p className="font-display text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            <span className="text-white">iTitans </span>
+            <span className="text-gradient-anim">Digital</span>
           </p>
-          <h1 className="mt-5 max-w-3xl font-display text-3xl font-semibold leading-[1.1] tracking-tight text-white/95 sm:text-4xl md:text-5xl">
-            Full-Service Performance Marketing Agency and AI Automation Partner
-          </h1>
-          <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-            We turn traffic into revenue and manual work into automated systems. Performance
-            marketing, custom development, and business AI automation under one accountable team.
-          </p>
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Button href="/contact">Get My Free Growth Plan</Button>
-            <Button href="/contact" variant="ghost">
-              Talk to a Strategist
-            </Button>
-          </div>
+          <TextReveal
+            as="h1"
+            text="Full-Service Performance Marketing Agency and AI Automation Partner"
+            className="mt-5 max-w-3xl font-display text-3xl font-semibold leading-[1.15] tracking-tight text-white/95 sm:text-4xl md:text-5xl"
+            stagger={38}
+          />
+          <Reveal delay={280} variant="blur">
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
+              We turn traffic into revenue and manual work into automated systems. Performance
+              marketing, custom development, and business AI automation under one accountable team.
+            </p>
+          </Reveal>
+          <Reveal delay={420}>
+            <div className="mt-9 flex flex-col gap-4 sm:flex-row sm:items-center">
+              <Button href="/contact">Get My Free Growth Plan</Button>
+              <Button href="/contact" variant="ghost">
+                Talk to a Strategist
+              </Button>
+            </div>
+          </Reveal>
         </div>
       </section>
 
-      <div className="border-y border-ink/10 bg-ink-soft py-4 text-white overflow-hidden">
+      <div className="marquee-track overflow-hidden border-y border-ink/10 bg-ink-soft py-4 text-white">
         <div className="flex w-max gap-10 marquee whitespace-nowrap px-4 text-sm font-medium tracking-wide text-white/70">
           {[...site.trustBar, ...site.trustBar].map((item, i) => (
             <span key={`${item}-${i}`} className="inline-flex items-center gap-10">
@@ -53,13 +63,15 @@ export default function HomePage() {
 
       <section className="section-wash py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-8">
-          <Reveal>
+          <Reveal variant="clip">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal-deep">
               Why iTitans Digital
             </p>
             <h2 className="mt-4 max-w-3xl font-display text-3xl font-semibold tracking-tight md:text-5xl">
               Marketing That Performs. Automation That Compounds.
             </h2>
+          </Reveal>
+          <Reveal delay={120}>
             <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate">
               Most agencies sell you channels. We sell you outcomes, then build the infrastructure
               that protects them. Our strategists acquire demand through SEO, paid search, paid
@@ -92,10 +104,10 @@ export default function HomePage() {
               </Button>
             </div>
           </Reveal>
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 xl:grid-cols-4" style={{ perspective: "1000px" }}>
             {services.map((service, index) => (
-              <Reveal key={service.slug} delay={index * 60}>
-                <ServiceCard service={service} index={index} />
+              <Reveal key={service.slug} delay={index * 55} variant="scale">
+                <ServiceCard service={service} />
               </Reveal>
             ))}
           </div>
@@ -112,13 +124,13 @@ export default function HomePage() {
           </Reveal>
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {site.stats.map((stat, index) => (
-              <Reveal key={stat.label} delay={index * 80}>
-                <div className="rounded-3xl border border-white/10 bg-white/5 p-7">
+              <Reveal key={stat.label} delay={index * 80} variant="scale">
+                <SpotlightCard className="rounded-3xl border border-white/10 bg-white/5 p-7">
                   <p className="font-display text-4xl font-semibold text-amber md:text-5xl">
-                    {stat.value}
+                    <AnimatedCounter value={stat.value} />
                   </p>
                   <p className="mt-3 text-sm leading-relaxed text-white/65">{stat.label}</p>
-                </div>
+                </SpotlightCard>
               </Reveal>
             ))}
           </div>
@@ -135,14 +147,14 @@ export default function HomePage() {
           </Reveal>
           <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {processSteps.map((step, index) => (
-              <Reveal key={step.step} delay={index * 50}>
-                <div className="h-full rounded-3xl border border-line bg-paper-elevated p-7">
+              <Reveal key={step.step} delay={index * 50} className="process-card">
+                <SpotlightCard className="h-full rounded-3xl border border-line bg-paper-elevated p-7">
                   <span className="font-display text-sm font-semibold text-teal-deep">
                     Step {step.step}
                   </span>
                   <h3 className="mt-3 font-display text-xl font-semibold text-ink">{step.title}</h3>
                   <p className="mt-3 text-sm leading-relaxed text-slate">{step.description}</p>
-                </div>
+                </SpotlightCard>
               </Reveal>
             ))}
           </div>
@@ -163,11 +175,13 @@ export default function HomePage() {
               the United States. The channel mix changes by industry. The accountability does not.
             </p>
             <ul className="mt-8 space-y-3">
-              {industries.map((item) => (
-                <li key={item} className="flex gap-3 text-sm leading-relaxed text-ink-muted">
-                  <span className="text-teal">▸</span>
-                  {item}
-                </li>
+              {industries.map((item, i) => (
+                <Reveal key={item} delay={i * 40}>
+                  <li className="flex gap-3 text-sm leading-relaxed text-ink-muted">
+                    <span className="text-teal">▸</span>
+                    {item}
+                  </li>
+                </Reveal>
               ))}
             </ul>
             <div className="mt-8">
@@ -176,14 +190,17 @@ export default function HomePage() {
               </Button>
             </div>
           </Reveal>
-          <Reveal delay={120}>
-            <div className="relative overflow-hidden rounded-[2rem] border border-line bg-ink p-8 text-white md:p-10">
+          <Reveal delay={120} variant="scale">
+            <SpotlightCard className="relative overflow-hidden rounded-[2rem] border border-line bg-ink p-8 text-white md:p-10">
               <div className="absolute inset-0 hero-atmosphere opacity-60" />
+              <div className="absolute -right-4 -top-2 h-36 w-36 opacity-80">
+                <LoopGif variant="chat" className="h-full w-full" />
+              </div>
               <div className="relative">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-teal">
                   Put Your Back Office on Autopilot
                 </p>
-                <h3 className="mt-4 font-display text-2xl font-semibold md:text-3xl">
+                <h3 className="mt-4 max-w-[18ch] font-display text-2xl font-semibold md:text-3xl">
                   AI stops being a novelty the moment it removes a bottleneck you feel every week.
                 </h3>
                 <ul className="mt-6 space-y-3 text-sm text-white/70">
@@ -196,7 +213,7 @@ export default function HomePage() {
                   <Button href="/services/ai-chatbot">Book a Free Automation Audit</Button>
                 </div>
               </div>
-            </div>
+            </SpotlightCard>
           </Reveal>
         </div>
       </section>
@@ -213,14 +230,16 @@ export default function HomePage() {
           </Reveal>
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
             {testimonials.map((item, index) => (
-              <Reveal key={item.author} delay={index * 80}>
-                <blockquote className="flex h-full flex-col rounded-3xl border border-line bg-paper-elevated p-7">
-                  <p className="flex-1 text-base leading-relaxed text-ink-muted">&ldquo;{item.quote}&rdquo;</p>
+              <Reveal key={item.author} delay={index * 80} variant="scale">
+                <SpotlightCard className="flex h-full flex-col rounded-3xl border border-line bg-paper-elevated p-7">
+                  <p className="flex-1 text-base leading-relaxed text-ink-muted">
+                    &ldquo;{item.quote}&rdquo;
+                  </p>
                   <footer className="mt-6 border-t border-line pt-5">
                     <p className="font-semibold text-ink">{item.author}</p>
                     <p className="text-sm text-slate">{item.detail}</p>
                   </footer>
-                </blockquote>
+                </SpotlightCard>
               </Reveal>
             ))}
           </div>

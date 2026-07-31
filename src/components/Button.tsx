@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useCallback, useRef } from "react";
 
 type ButtonProps = {
   href: string;
@@ -19,13 +22,43 @@ const variants = {
 };
 
 export function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {
+  const ref = useRef<HTMLAnchorElement>(null);
+
+  const reset = useCallback(() => {
+    const el = ref.current;
+    if (!el) return;
+    el.style.setProperty("--mx", "0px");
+    el.style.setProperty("--my", "0px");
+    el.style.setProperty("--ix", "0px");
+    el.style.setProperty("--iy", "0px");
+  }, []);
+
+  const onMove = useCallback((e: React.MouseEvent<HTMLAnchorElement>) => {
+    const el = ref.current;
+    if (!el || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const rect = el.getBoundingClientRect();
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+    el.style.setProperty("--mx", `${x * 0.22}px`);
+    el.style.setProperty("--my", `${y * 0.22}px`);
+    el.style.setProperty("--ix", `${x * 0.08}px`);
+    el.style.setProperty("--iy", `${y * 0.08}px`);
+  }, []);
+
   return (
     <Link
+      ref={ref}
       href={href}
-      className={`inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 text-sm font-semibold transition duration-300 ${variants[variant]} ${className}`}
+      onMouseMove={onMove}
+      onMouseLeave={reset}
+      className={`magnetic-btn btn-sheen rounded-full px-6 py-3.5 text-sm font-semibold transition-colors duration-300 ${variants[variant]} ${className}`}
     >
-      {children}
-      <span aria-hidden>→</span>
+      <span className="magnetic-inner relative z-[1]">
+        {children}
+        <span aria-hidden className="transition-transform duration-300 group-hover:translate-x-0.5">
+          →
+        </span>
+      </span>
     </Link>
   );
 }

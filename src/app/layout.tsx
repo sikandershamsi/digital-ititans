@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bricolage_Grotesque, Figtree } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { ScrollProgress } from "@/components/ScrollProgress";
 import { site } from "@/data/site";
 import "./globals.css";
 
@@ -39,6 +40,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${display.variable} ${body.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-paper text-ink">
+        <ScrollProgress />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
