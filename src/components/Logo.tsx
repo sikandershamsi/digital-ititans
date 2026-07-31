@@ -4,31 +4,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 type LogoProps = {
-  variant?: "light" | "purple" | "mark";
   className?: string;
   href?: string;
   priority?: boolean;
 };
 
-const assets = {
-  light: { src: "/brand/logo-light.png", w: 812, h: 232, alt: "iTitans" },
-  purple: { src: "/brand/logo-purple.png", w: 812, h: 232, alt: "iTitans" },
-  mark: { src: "/brand/logo-mark.png", w: 129, h: 191, alt: "iTitans" },
+const LOGO = {
+  src: "/brand/ititans-digital-logo.png",
+  w: 1920,
+  h: 662,
+  alt: "iTitans Digital",
 } as const;
 
-export function Logo({
-  variant = "light",
-  className = "",
-  href = "/",
-  priority = false,
-}: LogoProps) {
-  const asset = assets[variant];
+export function Logo({ className = "", href = "/", priority = false }: LogoProps) {
   const image = (
     <Image
-      src={asset.src}
-      alt={asset.alt}
-      width={asset.w}
-      height={asset.h}
+      src={LOGO.src}
+      alt={LOGO.alt}
+      width={LOGO.w}
+      height={LOGO.h}
       priority={priority}
       className={`h-9 w-auto object-contain md:h-10 ${className}`}
     />

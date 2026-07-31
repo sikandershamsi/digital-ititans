@@ -27,15 +27,12 @@ export default function HomePage() {
           <div className="max-w-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/brand/logo-light.png"
-              alt="iTitans"
-              width={406}
-              height={116}
-              className="h-14 w-auto object-contain sm:h-16 md:h-[4.5rem]"
+              src="/brand/ititans-digital-logo.png"
+              alt="iTitans Digital"
+              width={600}
+              height={207}
+              className="h-14 w-auto object-contain sm:h-16 md:h-[4.75rem]"
             />
-            <p className="mt-3 font-display text-2xl font-semibold tracking-[0.18em] text-amber sm:text-3xl">
-              DIGITAL
-            </p>
           </div>
           <TextReveal
             as="h1"

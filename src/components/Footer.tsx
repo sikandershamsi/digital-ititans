@@ -12,16 +12,13 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex">
               <Image
-                src="/brand/logo-light.png"
-                alt="iTitans"
-                width={812}
-                height={232}
+                src="/brand/ititans-digital-logo.png"
+                alt="iTitans Digital"
+                width={1920}
+                height={662}
                 className="h-10 w-auto object-contain"
               />
             </Link>
-            <p className="mt-2 font-display text-sm font-semibold tracking-wide text-amber">
-              Digital
-            </p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
               Full-service performance marketing and AI automation from Frisco, Texas. We turn
               traffic into revenue and manual work into automated systems.

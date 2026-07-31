@@ -34,7 +34,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 md:px-8">
-        <Logo variant="light" priority className="h-8 md:h-9" />
+        <Logo priority className="h-8 md:h-9" />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {site.nav.map((item) =>

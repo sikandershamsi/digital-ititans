@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_US",
     type: "website",
-    images: [{ url: "/brand/logo-purple.png" }],
+    images: [{ url: "/brand/ititans-digital-logo.png" }],
   },
 };
 
