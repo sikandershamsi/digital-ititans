@@ -4,7 +4,6 @@ import { CTABand } from "@/components/CTABand";
 import { FAQ } from "@/components/FAQ";
 import { FeatureLoveSection } from "@/components/FeatureLoveSection";
 import { HeroVisual } from "@/components/HeroVisual";
-import { IntegrationsSection } from "@/components/IntegrationsSection";
 import { LoopGif } from "@/components/LoopGif";
 import { Reveal } from "@/components/Reveal";
 import { ServiceCard } from "@/components/ServiceCard";
@@ -129,8 +128,6 @@ export default function HomePage() {
       </section>
 
       <FeatureLoveSection />
-
-      <IntegrationsSection />
 
       <section className="bg-ink py-20 text-white md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">

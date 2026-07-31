@@ -611,15 +611,6 @@ h4,
   animation: sheen-sweep 2.2s ease-in-out infinite;
 }
 
-.integration-tile {
-  animation: tile-float 5s ease-in-out infinite;
-}
-
-.dash-flow {
-  stroke-dasharray: 5 9;
-  animation: dash-flow 7s linear infinite;
-}
-
 @keyframes atmosphere-drift {
   from {
     background-position: 0% 40%;
@@ -811,16 +802,6 @@ h4,
   }
 }
 
-@keyframes tile-float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-4px);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -851,9 +832,7 @@ h4,
   .gauge-needle,
   .gauge-arc,
   .leaderboard-scroll,
-  .handoff-beam::after,
-  .integration-tile,
-  .dash-flow {
+  .handoff-beam::after {
     animation: none !important;
   }
 

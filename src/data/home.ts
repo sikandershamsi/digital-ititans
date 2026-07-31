@@ -42,21 +42,3 @@ export const loveFeatures = [
     tone: "media" as const,
   },
 ] as const;
-
-export const integrationPartners = [
-  "Google Ads",
-  "Meta Ads",
-  "GA4",
-  "HubSpot",
-  "Shopify",
-  "WordPress",
-  "Salesforce",
-  "LinkedIn",
-  "GBP",
-  "Slack",
-  "Zapier",
-  "Stripe",
-  "Klaviyo",
-  "Microsoft Ads",
-  "CallRail",
-] as const;
