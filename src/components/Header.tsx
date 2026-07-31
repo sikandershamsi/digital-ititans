@@ -41,10 +41,8 @@ export function Header() {
           : "border-b border-transparent bg-ink/70 backdrop-blur-md"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-[72px] sm:px-5 md:px-8">
-        <div className="min-w-0 flex-1">
-          <Logo priority className="h-6 max-w-[9.5rem] sm:h-7 sm:max-w-[11rem] md:h-8 md:max-w-[12.5rem]" />
-        </div>
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:h-[68px] sm:px-5 md:px-8">
+        <Logo priority />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {site.nav.map((item) =>

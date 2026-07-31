@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
 
@@ -10,15 +10,7 @@ export function Footer() {
       <div className="relative mx-auto max-w-7xl px-4 py-12 sm:px-5 sm:py-16 md:px-8 md:py-20">
         <div className="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-flex">
-              <Image
-                src="/brand/ititans-digital-logo-white.png"
-                alt="iTitans Digital"
-                width={1920}
-                height={662}
-                className="h-7 w-auto max-w-[min(100%,11rem)] object-contain sm:h-8 sm:max-w-none"
-              />
-            </Link>
+            <Logo variant="footer" href="/" />
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
               Full-service performance marketing and AI automation from Frisco, Texas. We turn
               traffic into revenue and manual work into automated systems.
