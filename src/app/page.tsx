@@ -24,14 +24,23 @@ export default function HomePage() {
         </div>
 
         <div className="relative mx-auto flex min-h-[100svh] max-w-7xl flex-col justify-center px-5 pb-24 pt-28 md:px-8 md:pb-28 md:pt-32">
-          <p className="font-display text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-            <span className="text-white">iTitans </span>
-            <span className="text-gradient-anim">Digital</span>
-          </p>
+          <div className="max-w-xl">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/brand/logo-light.png"
+              alt="iTitans"
+              width={406}
+              height={116}
+              className="h-14 w-auto object-contain sm:h-16 md:h-[4.5rem]"
+            />
+            <p className="mt-3 font-display text-2xl font-semibold tracking-[0.18em] text-amber sm:text-3xl">
+              DIGITAL
+            </p>
+          </div>
           <TextReveal
             as="h1"
             text="Full-Service Performance Marketing Agency and AI Automation Partner"
-            className="mt-5 max-w-3xl font-display text-3xl font-semibold leading-[1.15] tracking-tight text-white/95 sm:text-4xl md:text-5xl"
+            className="mt-7 max-w-3xl font-display text-3xl font-semibold leading-[1.15] tracking-tight text-white/95 sm:text-4xl md:text-5xl"
             stagger={38}
           />
           <Reveal delay={280} variant="blur">
@@ -55,7 +64,7 @@ export default function HomePage() {
         <div className="flex w-max gap-10 marquee whitespace-nowrap px-4 text-sm font-medium tracking-wide text-white/70">
           {[...site.trustBar, ...site.trustBar].map((item, i) => (
             <span key={`${item}-${i}`} className="inline-flex items-center gap-10">
-              <span className="text-teal">●</span> {item}
+              <span className="text-amber">●</span> {item}
             </span>
           ))}
         </div>

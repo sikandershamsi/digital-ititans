@@ -19,13 +19,13 @@ export function HeroVisual() {
       >
         <defs>
           <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#0f9f8a" stopOpacity="0.9" />
-            <stop offset="55%" stopColor="#e29a2e" stopOpacity="0.75" />
-            <stop offset="100%" stopColor="#0f9f8a" stopOpacity="0.2" />
+            <stop offset="0%" stopColor="#6ec1e4" stopOpacity="0.9" />
+            <stop offset="55%" stopColor="#9b4dca" stopOpacity="0.75" />
+            <stop offset="100%" stopColor="#4c076b" stopOpacity="0.2" />
           </linearGradient>
           <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
-            <stop offset="0%" stopColor="#0f9f8a" stopOpacity="0.2" />
-            <stop offset="100%" stopColor="#0f9f8a" />
+            <stop offset="0%" stopColor="#4c076b" stopOpacity="0.25" />
+            <stop offset="100%" stopColor="#6ec1e4" />
           </linearGradient>
         </defs>
 
@@ -40,7 +40,7 @@ export function HeroVisual() {
             strokeDasharray="8 14"
             opacity="0.7"
           />
-          <circle cx="360" cy="210" r="5" fill="#e29a2e">
+          <circle cx="360" cy="210" r="5" fill="#6ec1e4">
             <animate attributeName="opacity" values="0.4;1;0.4" dur="2.4s" repeatCount="indefinite" />
           </circle>
         </g>
@@ -51,31 +51,28 @@ export function HeroVisual() {
             cy="210"
             r="112"
             fill="none"
-            stroke="rgba(15,159,138,0.45)"
+            stroke="rgba(155,77,202,0.45)"
             strokeWidth="1"
             strokeDasharray="2 10"
           />
-          <circle cx="210" cy="98" r="4" fill="#0f9f8a" />
+          <circle cx="210" cy="98" r="4" fill="#9b4dca" />
         </g>
 
-        <circle cx="210" cy="210" r="58" fill="rgba(7,17,31,0.72)" stroke="rgba(255,255,255,0.12)" />
+        <circle cx="210" cy="210" r="58" fill="rgba(3,3,28,0.85)" stroke="rgba(255,255,255,0.12)" />
+        <image
+          href="/brand/logo-mark.png"
+          x="178"
+          y="172"
+          width="64"
+          height="76"
+          opacity="0.95"
+        />
         <text
           x="210"
-          y="206"
-          textAnchor="middle"
-          fill="#0f9f8a"
-          fontSize="18"
-          fontFamily="var(--font-display), system-ui"
-          fontWeight="700"
-        >
-          iT
-        </text>
-        <text
-          x="210"
-          y="228"
+          y="248"
           textAnchor="middle"
           fill="rgba(255,255,255,0.55)"
-          fontSize="9"
+          fontSize="8"
           letterSpacing="1.6"
         >
           GROWTH
@@ -102,16 +99,16 @@ export function HeroVisual() {
 
         {/* Network nodes */}
         <g>
-          <line x1="120" y1="140" x2="180" y2="180" stroke="rgba(15,159,138,0.35)" strokeWidth="1" />
-          <line x1="300" y1="130" x2="240" y2="175" stroke="rgba(226,154,46,0.35)" strokeWidth="1" />
-          <line x1="140" y1="260" x2="185" y2="230" stroke="rgba(15,159,138,0.3)" strokeWidth="1" />
-          <circle cx="120" cy="140" r="4" fill="#0f9f8a">
+          <line x1="120" y1="140" x2="180" y2="180" stroke="rgba(110,193,228,0.35)" strokeWidth="1" />
+          <line x1="300" y1="130" x2="240" y2="175" stroke="rgba(155,77,202,0.35)" strokeWidth="1" />
+          <line x1="140" y1="260" x2="185" y2="230" stroke="rgba(110,193,228,0.3)" strokeWidth="1" />
+          <circle cx="120" cy="140" r="4" fill="#6ec1e4">
             <animate attributeName="r" values="3;5.5;3" dur="2.2s" repeatCount="indefinite" />
           </circle>
-          <circle cx="300" cy="130" r="4" fill="#e29a2e">
+          <circle cx="300" cy="130" r="4" fill="#9b4dca">
             <animate attributeName="r" values="3;5;3" dur="1.8s" begin="0.4s" repeatCount="indefinite" />
           </circle>
-          <circle cx="140" cy="260" r="4" fill="#0f9f8a">
+          <circle cx="140" cy="260" r="4" fill="#6ec1e4">
             <animate attributeName="r" values="3;5;3" dur="2.6s" begin="0.8s" repeatCount="indefinite" />
           </circle>
         </g>

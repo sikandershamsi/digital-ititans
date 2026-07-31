@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Logo } from "@/components/Logo";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
 
@@ -28,20 +29,12 @@ export function Header() {
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled || open
-          ? "border-b border-white/10 bg-ink/95 backdrop-blur-xl shadow-lg shadow-black/10"
+          ? "border-b border-white/10 bg-ink/95 backdrop-blur-xl shadow-lg shadow-black/20"
           : "border-b border-transparent bg-ink/70 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 md:px-8">
-        <Link href="/" className="group flex items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="relative grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-teal to-teal-deep text-sm font-bold text-white shadow-[0_0_24px_var(--glow)]">
-            iT
-            <span className="pulse-ring absolute inset-0 rounded-xl border border-teal/50" />
-          </span>
-          <span className="font-display text-[1.15rem] font-semibold tracking-tight text-white">
-            iTitans <span className="text-teal">Digital</span>
-          </span>
-        </Link>
+        <Logo variant="light" priority className="h-8 md:h-9" />
 
         <nav className="hidden items-center gap-1 lg:flex">
           {site.nav.map((item) =>

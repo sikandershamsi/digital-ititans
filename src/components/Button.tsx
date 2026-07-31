@@ -12,9 +12,9 @@ type ButtonProps = {
 
 const variants = {
   primary:
-    "bg-amber text-ink hover:bg-amber-deep shadow-[0_10px_30px_rgba(226,154,46,0.25)]",
+    "bg-amber text-ink hover:bg-amber-deep shadow-[0_10px_30px_rgba(110,193,228,0.35)]",
   secondary:
-    "bg-teal text-white hover:bg-teal-deep shadow-[0_10px_30px_rgba(15,159,138,0.25)]",
+    "bg-teal text-white hover:bg-teal-deep shadow-[0_10px_30px_rgba(76,7,107,0.35)]",
   ghost:
     "border border-white/25 bg-white/5 text-white hover:border-white/50 hover:bg-white/10",
   light:

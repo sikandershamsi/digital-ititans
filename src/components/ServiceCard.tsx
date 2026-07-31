@@ -34,7 +34,7 @@ export function ServiceCard({ service }: { service: Service; index?: number }) {
         <div className="absolute -right-2 top-2 h-24 w-24 opacity-70 transition duration-500 group-hover:opacity-100 group-hover:scale-110">
           <LoopGif variant={loops[service.slug] ?? "pulse"} className="h-full w-full" />
         </div>
-        <span className="relative grid h-12 w-12 place-items-center rounded-2xl bg-ink text-lg text-teal transition duration-300 group-hover:shadow-[0_0_24px_rgba(15,159,138,0.45)]">
+        <span className="relative grid h-12 w-12 place-items-center rounded-2xl bg-ink text-lg text-amber transition duration-300 group-hover:shadow-[0_0_24px_rgba(110,193,228,0.45)]">
           {icons[service.slug] ?? "●"}
         </span>
         <h3 className="mt-6 font-display text-xl font-semibold text-ink">{service.title}</h3>

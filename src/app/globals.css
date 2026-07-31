@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #07111f;
-  --ink-soft: #122033;
-  --ink-muted: #243247;
-  --paper: #f3f6fa;
+  /* Brand palette from ititanstech.com + original iTitans logo */
+  --ink: #03031c;
+  --ink-soft: #0b0b28;
+  --ink-muted: #2a2140;
+  --paper: #f7f5fb;
   --paper-elevated: #ffffff;
-  --mist: #d9e3ef;
-  --teal: #0f9f8a;
-  --teal-deep: #0a7a6a;
-  --amber: #e29a2e;
-  --amber-deep: #c47d12;
-  --slate: #5a6b7d;
-  --line: rgba(7, 17, 31, 0.1);
-  --glow: rgba(15, 159, 138, 0.35);
+  --mist: #ebe4f4;
+  --teal: #4c076b; /* brand purple */
+  --teal-deep: #35054c;
+  --amber: #6ec1e4; /* sky CTA blue */
+  --amber-deep: #4aa8d0;
+  --slate: #5a5668;
+  --line: rgba(76, 7, 107, 0.12);
+  --glow: rgba(76, 7, 107, 0.4);
   --background: var(--paper);
   --foreground: var(--ink);
 }
@@ -68,10 +69,10 @@ h4,
 
 .hero-atmosphere {
   background:
-    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(15, 159, 138, 0.28), transparent 55%),
-    radial-gradient(ellipse 50% 45% at 15% 80%, rgba(226, 154, 46, 0.18), transparent 50%),
-    radial-gradient(ellipse 40% 30% at 90% 70%, rgba(36, 50, 71, 0.9), transparent 60%),
-    linear-gradient(160deg, #040a14 0%, #0c1a2e 45%, #07111f 100%);
+    radial-gradient(ellipse 80% 60% at 70% 20%, rgba(76, 7, 107, 0.45), transparent 55%),
+    radial-gradient(ellipse 50% 45% at 15% 80%, rgba(110, 193, 228, 0.2), transparent 50%),
+    radial-gradient(ellipse 40% 30% at 90% 70%, rgba(42, 33, 64, 0.95), transparent 60%),
+    linear-gradient(160deg, #020214 0%, #0b0b28 45%, #03031c 100%);
   background-size: 120% 120%;
   animation: atmosphere-drift 18s ease-in-out infinite alternate;
 }
@@ -93,8 +94,8 @@ h4,
 
 .section-wash {
   background:
-    radial-gradient(ellipse 60% 40% at 0% 0%, rgba(15, 159, 138, 0.08), transparent 55%),
-    radial-gradient(ellipse 50% 35% at 100% 20%, rgba(226, 154, 46, 0.07), transparent 50%),
+    radial-gradient(ellipse 60% 40% at 0% 0%, rgba(76, 7, 107, 0.08), transparent 55%),
+    radial-gradient(ellipse 50% 35% at 100% 20%, rgba(110, 193, 228, 0.1), transparent 50%),
     var(--paper);
 }
 
@@ -182,8 +183,8 @@ h4,
   background: conic-gradient(
     from var(--shimmer-angle, 0deg),
     transparent 40%,
-    rgba(15, 159, 138, 0.7),
-    rgba(226, 154, 46, 0.65),
+    rgba(76, 7, 107, 0.75),
+    rgba(110, 193, 228, 0.7),
     transparent 70%
   );
   -webkit-mask:
@@ -223,7 +224,7 @@ h4,
   inset: 0;
   background: radial-gradient(
     420px circle at var(--spot-x) var(--spot-y),
-    rgba(15, 159, 138, 0.18),
+    rgba(76, 7, 107, 0.16),
     transparent 55%
   );
   opacity: var(--spot-opacity);
@@ -276,7 +277,7 @@ h4,
 }
 
 .text-gradient-anim {
-  background: linear-gradient(90deg, #fff 0%, #0f9f8a 35%, #e29a2e 65%, #fff 100%);
+  background: linear-gradient(90deg, #fff 0%, #6ec1e4 30%, #9b4dca 60%, #fff 100%);
   background-size: 220% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -326,7 +327,7 @@ h4,
   content: "";
   position: absolute;
   inset: 20% 25%;
-  background: radial-gradient(circle, rgba(226, 154, 46, 0.35), transparent 70%);
+  background: radial-gradient(circle, rgba(110, 193, 228, 0.4), transparent 70%);
   filter: blur(18px);
   opacity: 0;
   transition: opacity 0.5s ease;

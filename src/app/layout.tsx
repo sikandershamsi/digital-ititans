@@ -26,6 +26,10 @@ export const metadata: Metadata = {
   },
   description:
     "iTitans Digital is a US full-service performance marketing and AI automation agency. We drive leads, sales, and ROAS with SEO, PPC, web, and AI chatbots.",
+  icons: {
+    icon: [{ url: "/favicon.png", sizes: "32x32", type: "image/png" }],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "192x192", type: "image/png" }],
+  },
   openGraph: {
     title: "iTitans Digital",
     description: site.tagline,
@@ -33,6 +37,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_US",
     type: "website",
+    images: [{ url: "/brand/logo-purple.png" }],
   },
 };
 

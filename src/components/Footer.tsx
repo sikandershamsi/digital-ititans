@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { site } from "@/data/site";
 import { services } from "@/data/services";
@@ -9,18 +10,27 @@ export function Footer() {
       <div className="relative mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-20">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-1">
-            <Link href="/" className="font-display text-2xl font-semibold tracking-tight">
-              iTitans <span className="text-teal">Digital</span>
+            <Link href="/" className="inline-flex">
+              <Image
+                src="/brand/logo-light.png"
+                alt="iTitans"
+                width={812}
+                height={232}
+                className="h-10 w-auto object-contain"
+              />
             </Link>
+            <p className="mt-2 font-display text-sm font-semibold tracking-wide text-amber">
+              Digital
+            </p>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">
               Full-service performance marketing and AI automation from Frisco, Texas. We turn
               traffic into revenue and manual work into automated systems.
             </p>
             <div className="mt-6 space-y-2 text-sm text-white/70">
-              <a href={site.phoneHref} className="block transition hover:text-teal">
+              <a href={site.phoneHref} className="block transition hover:text-amber">
                 {site.phone}
               </a>
-              <a href={site.emailHref} className="block transition hover:text-teal">
+              <a href={site.emailHref} className="block transition hover:text-amber">
                 {site.email}
               </a>
               <p>{site.location}</p>
