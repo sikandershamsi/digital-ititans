@@ -10,7 +10,7 @@ type LogoProps = {
 };
 
 const LOGO = {
-  src: "/brand/ititans-digital-logo.png",
+  src: "/brand/ititans-digital-logo-white.png",
   w: 1920,
   h: 662,
   alt: "iTitans Digital",

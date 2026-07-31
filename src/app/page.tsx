@@ -27,7 +27,7 @@ export default function HomePage() {
           <div className="max-w-xl">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/brand/ititans-digital-logo.png"
+              src="/brand/ititans-digital-logo-white.png"
               alt="iTitans Digital"
               width={600}
               height={207}

@@ -12,7 +12,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-flex">
               <Image
-                src="/brand/ititans-digital-logo.png"
+                src="/brand/ititans-digital-logo-white.png"
                 alt="iTitans Digital"
                 width={1920}
                 height={662}
