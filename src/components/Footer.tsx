@@ -16,7 +16,7 @@ export function Footer() {
                 alt="iTitans Digital"
                 width={1920}
                 height={662}
-                className="h-9 w-auto max-w-[min(100%,14rem)] object-contain sm:h-10 sm:max-w-none"
+                className="h-7 w-auto max-w-[min(100%,11rem)] object-contain sm:h-8 sm:max-w-none"
               />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/65">

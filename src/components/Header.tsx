@@ -43,7 +43,7 @@ export function Header() {
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-3 px-4 sm:h-[72px] sm:px-5 md:px-8">
         <div className="min-w-0 flex-1">
-          <Logo priority className="h-8 sm:h-9 md:h-10" />
+          <Logo priority className="h-6 max-w-[9.5rem] sm:h-7 sm:max-w-[11rem] md:h-8 md:max-w-[12.5rem]" />
         </div>
 
         <nav className="hidden items-center gap-1 lg:flex">
