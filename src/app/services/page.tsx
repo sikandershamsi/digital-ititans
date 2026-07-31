@@ -16,16 +16,25 @@ export default function ServicesPage() {
     <>
       <section className="relative overflow-hidden bg-ink pb-14 pt-28 text-white sm:pb-20 sm:pt-32 md:pb-28 md:pt-40">
         <div className="absolute inset-0 hero-atmosphere" />
+        <div className="absolute inset-0 hero-grid opacity-30" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-teal">Services</p>
-          <h1 className="mt-4 max-w-4xl font-display text-[1.75rem] font-semibold tracking-tight sm:text-4xl md:text-6xl">
+          <p className="enter text-sm font-semibold uppercase tracking-[0.22em] text-teal">
+            Services
+          </p>
+          <h1
+            className="enter mt-4 max-w-4xl font-display text-[1.75rem] font-semibold tracking-tight sm:text-4xl md:text-6xl"
+            style={{ ["--enter-delay" as string]: "80ms" }}
+          >
             End-to-End Capability Across Acquisition, Conversion, and Operations
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
+          <p
+            className="enter mt-6 max-w-2xl text-lg leading-relaxed text-white/70"
+            style={{ ["--enter-delay" as string]: "160ms" }}
+          >
             Engage us for one service or run your entire digital program through a single accountable
             team.
           </p>
-          <div className="mt-8">
+          <div className="enter mt-8" style={{ ["--enter-delay" as string]: "240ms" }}>
             <Button href="/contact">Get My Free Growth Plan</Button>
           </div>
         </div>
@@ -35,7 +44,7 @@ export default function ServicesPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {services.map((service, index) => (
-              <Reveal key={service.slug} delay={index * 50}>
+              <Reveal key={service.slug} delay={index * 50} variant={index % 2 === 0 ? "up" : "scale"}>
                 <ServiceCard service={service} index={index} />
               </Reveal>
             ))}

@@ -554,12 +554,78 @@ h4,
   .card-rise {
     transition:
       border-color 0.3s ease,
-      box-shadow 0.35s ease;
+      box-shadow 0.35s ease,
+      transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
   .card-rise:hover {
     border-color: color-mix(in oklab, var(--teal) 35%, var(--line));
     box-shadow: 0 18px 40px -28px rgba(3, 3, 28, 0.35);
+    transform: translateY(-3px);
+  }
+
+  .tile-lift {
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.35s ease,
+      transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .tile-lift:hover {
+    border-color: color-mix(in oklab, var(--teal) 40%, var(--line));
+    box-shadow: 0 20px 44px -30px rgba(3, 3, 28, 0.4);
+    transform: translateY(-4px);
+  }
+
+  .process-card {
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease,
+      transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .process-card:hover {
+    border-color: rgba(110, 193, 228, 0.35);
+    background-color: rgba(255, 255, 255, 0.08);
+    transform: translateY(-3px);
+  }
+
+  .benefit-row {
+    transition:
+      border-color 0.3s ease,
+      transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .benefit-row:hover {
+    border-color: color-mix(in oklab, var(--teal) 35%, var(--line));
+    transform: translateX(4px);
+  }
+
+  .audience-card {
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.35s ease,
+      transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .audience-card:hover {
+    border-color: color-mix(in oklab, var(--amber) 40%, var(--line));
+    box-shadow: 0 16px 36px -28px rgba(3, 3, 28, 0.35);
+    transform: translateY(-3px);
+  }
+
+  .related-chip {
+    transition:
+      border-color 0.25s ease,
+      color 0.25s ease,
+      transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+      background-color 0.25s ease;
+  }
+
+  .related-chip:hover {
+    border-color: var(--teal);
+    color: var(--teal-deep);
+    transform: translateY(-2px);
   }
 }
 
@@ -865,7 +931,13 @@ h4,
   .arrow-nudge,
   .link-shift,
   .icon-bob,
-  .nav-link::after {
+  .nav-link::after,
+  .card-rise,
+  .tile-lift,
+  .process-card,
+  .benefit-row,
+  .audience-card,
+  .related-chip {
     transform: none !important;
     transition: none !important;
   }

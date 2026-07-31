@@ -55,7 +55,11 @@ export function Logo({
   return (
     <Link
       href={href}
-      className="inline-flex h-full shrink-0 items-center"
+      className={
+        variant === "footer"
+          ? "inline-flex shrink-0 items-center"
+          : "inline-flex h-full shrink-0 items-center"
+      }
       aria-label="iTitans Digital home"
     >
       {mark}
