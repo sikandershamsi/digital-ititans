@@ -1,0 +1,315 @@
+iTitans Digital: Pricing Page Content
+SEO Metadata
+URL slug: /pricing/
+
+Meta title (58 characters): Pricing | Web Design, SEO & App Development Packages
+
+Meta description (152 characters): See transparent pricing for website development, Shopify, SEO, and
+mobile app packages. Fixed-scope plans for US businesses. No hidden fees. Get a free quote.
+
+Primary keyword: digital agency pricing / web design and SEO packages pricing
+
+Secondary keywords: website development pricing packages, SEO packages pricing, monthly SEO cost,
+Shopify development cost, WordPress website packages, mobile app development cost, social media
+marketing packages, Google Ads management pricing, affordable web design for small business, digital
+marketing agency pricing USA
+
+Pricing Built for Clarity of Your Digital Authority
+Get complete transparency of our pricing range and services designed for small to large scale enterprise
+businesses. You choose the tier that matches your stage, and we quote anything custom within 48 hours.
+No retainers you cannot exit. No surprise line items after launch.
+
+Get a Free Quote
+
+Book a Strategy Call
+
+
+
+What Every iTitans Plan Includes
+Every engagement, from a five-page website to a multi-platform app, comes with the same quality of
+service:
+
+●​ Fixed scope in writing. You approve the deliverables, milestones, and price before we start.
+
+●​ You own everything. Source code, design files, domains, and ad accounts stay in your name.
+
+●​ US-based account management. Your point of contact works US business hours from Frisco, Texas.
+
+●​ Mobile-first and speed-tested. We build for Core Web Vitals, not just for desktop screenshots.
+
+●​ Reporting you can read. Plain-English dashboards, not 40-page exports.
+
+●​ 30 days of post-launch support. We fix what we build, free of charge.
+
+
+
+Website Design & Development Pricing
+We build on WordPress and custom stacks that your team can update without calling a developer. Each
+package below includes responsive design, on-page SEO setup, analytics configuration, and launch
+support. Pick the page count that fits your business today, and scale later.
+Launch | $1,199 one time
+Best for new businesses and single-service providers.
+
+●​ 5-page responsive website
+
+●​ Mobile-first design across all devices
+
+●​ On-page SEO setup and XML sitemap
+
+●​ Contact form and Google Analytics 4 setup
+
+●​ 2 revision rounds
+
+●​ 14-day delivery
+
+CTA: Start My Website
+
+Growth | $2,499 one time (Most Popular)
+Ideal for established SMBs that need a site to generate leads.
+
+●​ Up to 12 pages with custom UI/UX
+
+●​ WordPress CMS so your team edits content freely
+
+●​ Advanced on-page SEO plus schema markup
+
+●​ Blog architecture and category structure
+
+●​ Core Web Vitals speed optimization
+
+●​ 4 revision rounds
+
+●​ 30 days post-launch support
+
+CTA: Choose Growth
+
+Scale | From $4,999 one time
+Best for multi-location brands and companies with complex funnels.
+
+●​ 25+ pages with a reusable design system
+
+●​ Custom integrations: CRM, booking, payment gateways
+
+●​ Conversion tracking and event setup
+
+●​ Multi-language ready architecture
+
+●​ Priority support and quarterly performance reviews
+
+CTA: Request a Custom Quote
+
+Ecommerce & Shopify Development Pricing
+Online stores earn their money in the details: load speed, checkout friction, and product page structure.
+We build Shopify and WooCommerce stores that convert browsers into buyers, then hand you a store
+you can merchandise yourself. Migration from an existing platform stays included at every tier.
+Starter Store | $1,799 one time
+●​ Up to 30 products, uploaded and optimized
+
+●​ Premium theme customization to your brand
+
+●​ Payment, tax, and shipping configuration
+
+●​ Product page SEO templates
+
+●​ Launch checklist and staff training video
+
+Pro Store | $3,499 one time (Most Popular)
+●​ Up to 200 products with variant logic
+
+●​ Custom homepage and collection sections
+
+●​ Abandoned cart recovery and email flows
+
+●​ App integrations: reviews, upsells, subscriptions
+
+●​ GA4 and Meta Pixel conversion tracking
+
+●​ Speed tuning and mobile checkout optimization
+
+Enterprise Store | From $7,500 one time
+●​ Custom or headless checkout experience
+
+●​ ERP, POS, and inventory synchronization
+
+●​ Full platform migration with URL mapping
+
+●​ Multi-currency and multi-region setup
+
+●​ Dedicated ecommerce strategist
+
+
+
+SEO & AI Search Optimization Pricing
+Search now happens in two places: the classic results page and the AI answer above it. Every SEO
+retainer covers technical health, content, authority building, and visibility inside AI Overviews and
+assistant-generated answers.
+
+Local SEO | $499 per month
+Best for service businesses targeting one metro area.
+
+●​ 10 target keywords
+
+●​ Google Business Profile optimization and posting
+
+●​ On-page fixes and technical cleanup
+
+●​ Local citation building and NAP consistency
+
+●​ Monthly ranking and traffic report
+Growth SEO | $999 per month (Most Popular)
+Best for regional brands competing in crowded categories.
+
+●​ 25 target keywords across multiple service lines
+
+●​ Full technical SEO audit and remediation
+
+●​ 4 optimized content pieces per month
+
+●​ Ethical link acquisition
+
+●​ AI search and answer-engine optimization
+
+●​ Bi-weekly reporting and strategy calls
+
+National / Ecommerce SEO | From $1,999 per month
+Best for ecommerce catalogs and multi-state operations.
+
+●​ 50+ keywords and topic cluster strategy
+
+●​ Content engine with editorial calendar
+
+●​ Digital PR and high-authority link building
+
+●​ Conversion rate optimization testing
+
+●​ Dedicated strategist and custom dashboard
+
+
+
+Digital Marketing & Paid Media Pricing
+At iTitans Digital, we manage the campaign, the creative, and the landing experience together, because
+splitting them across vendors wastes budget. Management fees below exclude ad spend, which you pay
+directly to the platform.
+
+Service              Starting Price         What You Get
+
+Google Ads           $649/month or 12%      Campaign build, keyword and negative management, ad
+Management           of ad spend            copy testing, conversion tracking, monthly reporting
+
+Social Media                                3 platforms, 16 posts, community management, monthly
+                     $799/month
+Marketing                                   content calendar, performance report
+
+Meta & LinkedIn      $749/month or 12%      Audience research, creative production, A/B testing,
+Ads                  of ad spend            retargeting funnels
+
+                                            Flow automation, 4 campaigns, list segmentation,
+Email Marketing      $499/month
+                                            deliverability monitoring
+
+                                            6 SEO-optimized pieces, editorial calendar, internal linking
+Content Marketing $899/month
+                                            strategy
+Mobile App Development Pricing
+App budgets vary more than any other service, because scope drives everything. We scope every app in
+a paid discovery sprint first, then quote a fixed price for the build, so your budget stops moving once
+development starts.
+
+Tier          Investment      Timeline    Scope
+
+Discovery                                 Technical scope document, wireframes, clickable prototype,
+              $2,500          2 weeks
+Sprint                                    fixed-price build quote
+
+                              6 to 10     Cross-platform build (Flutter or React Native), 6 to 10
+MVP App       From $14,900
+                              weeks       screens, authentication, core user flow, store submission
+
+              $30,000 to      3 to 5      Full feature set, custom backend, payments, push
+Growth App
+              $70,000         months      notifications, admin panel, analytics
+
+Custom                                    Native iOS and Android, complex integrations, compliance
+              From $85,000 5+ months
+Platform                                  requirements, advanced QA, phased rollout
+
+Ongoing app maintenance: From $1,200 per month, covering OS updates, bug fixes, monitoring, and
+minor feature releases.
+
+
+
+Prefer a Dedicated Team?
+Hire our engineers, designers, and marketers as an extension of your in-house team, billed monthly with
+no recruitment overhead.
+
+●​ Hourly engagement: From $35 per hour
+
+●​ Dedicated developer: From $3,200 per month, full time
+
+●​ Dedicated designer: From $2,800 per month, full time
+
+●​ Fractional marketing team: From $2,400 per month
+
+You direct the roadmap. We supply the talent, the process, and the reporting.
+
+
+
+What Actually Changes Your Price?
+Want to know how the price factor changes in our services? Here is a complete breakdown of 5 variables
+to explain the gap:
+
+1.​ Page count and template reuse. Ten pages built from three templates cost far less than ten uniquely
+    designed layouts.
+2.​ Custom functionality. Booking systems, member portals, calculators, and payment logic add
+    engineering hours that a brochure site never touches.
+
+3.​ Content readiness. Supplying finished copy and photography reduces your build cost. Asking us to
+    write and shoot adds to it.
+
+4.​ Integration depth. Connecting a CRM, ERP, or third-party API requires testing against systems we do
+    not control.
+
+5.​ Competition level in your market. A plumber in a mid-size city ranks with a $499 SEO plan. A
+    national ecommerce brand competing on head terms needs a $2,000+ retainer to move.
+
+Tell us which of these apply to you, and we will price accordingly rather than defaulting to the largest
+package.
+
+
+
+How Our Pricing Compares to the US Market
+Independent industry data helps you judge any quote you receive including ours:
+
+●​ Websites: US agencies typically charge $2,500 to $10,000 for a standard business website, with small
+    business builds commonly landing between $2,000 and $8,000, according to 2026 pricing surveys.
+
+●​ SEO: Clutch data analyzed by OuterBox put the average monthly US SEO retainer at roughly $3,199 in
+    April 2026, while most small to midsize campaigns run $1,500 to $5,000 per month.
+
+●​ Mobile apps: US-based agencies quote production-ready MVPs between $30,000 and $150,000 in
+    2026.
+
+Our packages start below those averages because we run a blended delivery model: US-based strategy
+and account management paired with a vetted in-house engineering team. You get American business
+hours and accountability without the overhead of a downtown agency floor.
+
+
+
+How We Move From Quote to Launch
+1.​ Discovery call, 20 minutes. We ask about your goals, audience, and deadline. You ask about our
+    process and past work.
+
+2.​ Written proposal, 48 hours. You receive a fixed scope, timeline, milestone schedule, and price. No
+    pressure, no expiring discounts.
+
+3.​ Kickoff and build. We assign your team, share a project board, and update you weekly.
+
+4.​ Launch and support. We ship, monitor, and stay available for 30 days at no cost.
+
+
+
+Get a Price for Your Exact Project
+Looking to get a custom quote for your services? Send us your requirements and receive a written quote
+within two business days, with a clear scope and a firm number attached.
+Get My Free Quote
+

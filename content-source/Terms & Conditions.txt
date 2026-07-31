@@ -1,0 +1,341 @@
+Terms & Conditions Page Content: iTitans Digital
+
+SEO Metadata
+URL slug: /terms-and-conditions/
+
+Meta Title (58 characters): Terms and Conditions | iTitans Digital Services Agreement
+
+Meta Description (152 characters): Read the terms and conditions for iTitans Digital. Understand our
+service agreement, payment terms, refund policy, IP rights, and client responsibilities.
+
+Primary keyword: terms and conditions Secondary keywords: iTitans Digital terms of service, digital
+agency service agreement, website development terms, mobile app development agreement, digital
+marketing terms and conditions, payment and refund policy, intellectual property rights, limitation of
+liability, acceptable use policy, governing law Texas
+
+Recommended schema: WebPage + BreadcrumbList + FAQPage (for the FAQ block at the bottom)
+
+
+
+
+Terms and Conditions
+Effective Date: [Insert Date] Last Updated: [Insert Date]
+
+Agreement Between You and iTitans Digital
+Welcome to iTitans Digital. These Terms and Conditions ("Terms") govern your access to
+ititansdigital.com ("Website") and every service you purchase from iTitans Digital ("iTitans Digital," "we,"
+"us," or "our"), including website development, mobile app development, WordPress and Shopify builds,
+ecommerce solutions, SEO, Google Ads management, social media marketing, and email marketing.
+
+When you browse the Website, submit an inquiry form, book a free consultation, sign a proposal, or pay
+an invoice, you accept these Terms in full. If any part of this agreement does not work for your business,
+stop using the Website and contact our team before you engage us.
+
+We serve clients across the United States from our base in Frisco, Texas. These Terms follow U.S.
+commercial practice and reflect how we actually run projects: clear scope, clear billing, and clear
+ownership.
+
+
+
+Definitions
+Read these definitions first. They shape how every clause below applies to you.
+
+"Client," "you," or "your" means the individual, business, or authorized representative who visits the
+Website, requests a quote, or purchases services from iTitans Digital.
+
+"Services" means any work we deliver, including custom website development, Android and iOS app
+development, React Native and Flutter builds, WooCommerce and Shopify stores, search engine
+optimization, paid advertising management, social media campaigns, maintenance retainers, and
+consulting.
+
+"Deliverables" means the finished assets we hand over: source code, design files, written content,
+campaign creative, reports, and documentation.
+
+"Client Materials" means everything you supply for a project, such as logos, brand guidelines, product
+photography, written copy, customer data, trademarks, and platform credentials.
+
+"Proposal" means the written scope, timeline, and pricing document we issue and you approve. The
+Proposal, together with these Terms, forms the complete contract for your project.
+
+
+
+Eligibility and Acceptance
+You must be at least 18 years old and legally able to enter a binding contract in your state. If you accept
+these Terms for a company, you confirm that you hold the authority to bind that company.
+
+We reserve the right to decline any project, refuse service, or close an account when a request conflicts
+with our policies, our capacity, or applicable law.
+
+
+
+Scope of Our Services
+We deliver exactly what your approved Proposal describes. That document controls the deliverables,
+milestones, revision rounds, and fees for your engagement.
+
+Anything outside the approved scope counts as a change request. We price change requests separately
+and add them to your timeline before work begins. This protects your budget and keeps your launch
+date realistic.
+
+We build and market digital products. We do not guarantee specific business outcomes such as revenue
+targets, app store approval, keyword positions, ad platform approval, or conversion rates. Search
+engines, app marketplaces, and advertising networks control their own algorithms and review policies,
+and those systems change without notice. We apply proven methods, report results transparently, and
+adjust strategy based on real data.
+
+
+
+Your Responsibilities as a Client
+Projects move at the speed of the slowest input. To keep your timeline intact, you agree to:
+
+●​ Supply content, images, brand assets, and platform credentials within the windows listed in your
+    Proposal
+
+●​ Assign one decision maker who approves designs, copy, and releases on your behalf
+
+●​ Return feedback and approvals within five business days unless we agree otherwise in writing
+
+●​ Confirm that you own or license every asset you send us
+●​ Maintain your own hosting, domain registration, and third-party subscriptions unless we manage
+    them under a signed retainer
+
+●​ Follow the advertising, privacy, and industry regulations that apply to your market
+
+Delays caused by missing materials or slow approvals shift the delivery schedule and may trigger
+additional fees when a project stalls beyond 30 days.
+
+
+
+Accounts, Credentials, and Access
+Some engagements require you to create an account or grant us administrative access to platforms such
+as WordPress, Shopify, Google Analytics, Google Ads, Meta Business Manager, or your app store
+developer console.
+
+You agree to provide accurate registration details, protect your login credentials, and notify us
+immediately if you suspect unauthorized access. You remain responsible for all activity that occurs under
+your accounts.
+
+We restrict credential access to the team members assigned to your project and remove that access
+after your engagement ends or upon your written request.
+
+
+
+Intellectual Property Rights
+Your Materials Stay Yours
+You keep full ownership of all Client Materials. By sending them to us, you grant iTitans Digital a limited
+license to use, edit, host, and display those materials for the sole purpose of completing your project.
+
+Deliverables Transfer on Final Payment
+Once we receive payment in full, ownership of the custom Deliverables built for your project passes to
+you. Until then, we retain all rights.
+
+We Keep Our Own Toolkit
+iTitans Digital retains ownership of our proprietary frameworks, reusable code libraries, internal
+processes, design systems, project templates, and know-how. Your ownership of the finished product
+does not extend to these underlying assets. We grant you a perpetual license to use them inside your
+delivered product.
+
+Third-Party Licenses Stay Separate
+Themes, plugins, stock imagery, fonts, APIs, and SDKs remain governed by their own vendor licenses. You
+are responsible for renewing any subscription license required to keep your product running.
+
+Portfolio Rights
+We may display finished work, screenshots, and non-confidential performance metrics in our portfolio,
+case studies, and marketing materials. Tell us in writing if you prefer that we exclude your project.
+
+The Website itself, including its layout, graphics, code, logos, and written content, belongs to iTitans
+Digital and remains protected under U.S. copyright and trademark law.
+Payment Terms and Refund Policy
+Quotes and Currency
+We quote all fees in U.S. dollars. Quotes stay valid for 30 days from the issue date.
+
+Deposits
+Development and design projects begin after we receive the deposit stated in your Proposal. We
+schedule your team and start discovery once that payment clears.
+
+Milestone and Retainer Billing
+Fixed-scope projects bill against approved milestones. Monthly services such as SEO, paid media
+management, social media, and maintenance bill in advance on your recurring billing date.
+
+Payment Window
+Invoices fall due within the period listed on the invoice, typically net 7 to net 15. Balances past due by
+more than 10 days may accrue a late fee, and we may pause active work, suspend campaign
+management, or withhold Deliverables until the account returns to good standing.
+
+Ad Spend and Third-Party Costs
+Advertising budgets, hosting, domains, premium plugins, licenses, and app store fees sit outside our
+management fees. You pay those vendors directly or reimburse us at cost.
+
+Refunds
+We do not refund completed work, delivered milestones, monthly service periods already performed, ad
+spend placed with third-party networks, or license fees paid to vendors on your behalf. If you cancel
+mid-milestone, we invoice for the work completed to that point and release the corresponding assets
+after payment. Refund requests receive a written response within 10 business days.
+
+Chargebacks
+Contact us before disputing a charge. We resolve most billing questions within one business day.
+
+
+
+Communication and SMS Consent
+We coordinate projects through email, scheduled calls, and project management tools. For
+time-sensitive updates such as launch windows, approval reminders, and billing notices, we may send
+SMS text messages to the mobile number you provide.
+
+We request your consent before we send any text message. Message and data rates may apply, and
+message frequency varies by project stage. Reply STOP at any time to opt out, or reply HELP for
+assistance. Opting out of text messages does not affect your service delivery, and we continue to reach
+you by email.
+
+We never sell or rent your mobile number. Our Privacy Policy explains how we collect, store, and protect
+your information.
+Acceptable Use of Our Website
+You agree not to:
+
+●​ Publish false, deceptive, defamatory, or unlawful content through any channel we manage for you
+
+●​ Infringe the copyrights, trademarks, patents, or privacy rights of any third party
+
+●​ Scrape, crawl, mirror, or harvest Website data with automated tools without our written permission
+
+●​ Probe, scan, or attempt to bypass the security features of the Website or any client system we host
+
+●​ Upload viruses, malware, or any code designed to disrupt or damage our infrastructure
+
+●​ Resell, sublicense, or redistribute our Services under another brand without a signed partnership
+    agreement
+
+●​ Use our SEO or advertising services to promote content that violates Google, Meta, Apple, or Google
+    Play policies
+
+We may suspend or terminate access immediately when we detect a violation, and we cooperate with
+law enforcement when required.
+
+
+
+Confidentiality
+Both parties handle sensitive information during a project. Neither party will disclose the other's
+confidential business information, including pricing, strategy documents, source code, customer data,
+and internal processes, to any outside party without written consent.
+
+This obligation survives the end of our engagement. It does not apply to information that becomes
+public through no fault of the receiving party or that a court or regulator compels us to disclose.
+
+
+
+Third-Party Platforms and Integrations
+Our work often connects to services we do not control: payment gateways, CRMs, shipping providers,
+email platforms, hosting companies, analytics tools, and app marketplaces.
+
+We integrate these tools according to their published documentation. We do not control their uptime,
+pricing changes, deprecated features, policy updates, or data practices. Your use of any third-party
+service falls under that provider's own terms. We are not liable for losses caused by an outage, policy
+change, or account suspension on a platform outside our control.
+
+
+
+Warranties and Disclaimers
+We deliver every project with professional care and industry standard practices.
+
+We provide a defect correction window after launch, as stated in your Proposal, during which we fix bugs
+in our code at no charge. This warranty does not cover issues caused by third-party updates,
+unauthorized edits, server changes, hosting failures, or new feature requests.
+Beyond that written warranty, we provide the Website and Services on an "as is" and "as available" basis.
+We disclaim all other warranties, express or implied, including implied warranties of merchantability,
+fitness for a particular purpose, and non-infringement, to the fullest extent U.S. law permits.
+
+
+
+Limitation of Liability
+To the maximum extent permitted by applicable law, iTitans Digital and its officers, employees, and
+contractors are not liable for indirect, incidental, special, consequential, or punitive damages, including
+lost profits, lost revenue, lost data, business interruption, or loss of goodwill, even when we knew such
+damages were possible.
+
+Our total aggregate liability for any claim connected to these Terms or your project will not exceed the
+total fees you paid us for the specific service that gave rise to the claim during the three months
+preceding the event.
+
+Some states restrict the exclusion of certain warranties or liabilities. Where those laws apply, our liability
+is limited to the smallest extent that law allows.
+
+
+
+Indemnification
+You agree to defend, indemnify, and hold iTitans Digital harmless from any claim, loss, liability, or
+expense, including reasonable attorney fees, arising from your Client Materials, your use of the
+Deliverables, your breach of these Terms, or your violation of any law or third-party right.
+
+
+
+Term, Cancellation, and Termination
+Ongoing Services
+Monthly services run on the term stated in your Proposal. Either party may cancel with 30 days written
+notice before the next billing date. Fees for the current billing cycle remain payable.
+
+Fixed-Scope Projects
+You may cancel a project in writing at any time. We invoice for all work completed and expenses incurred
+through the cancellation date. Deposits cover work already performed and are not refundable.
+
+Our Right to Terminate
+We may end an engagement immediately for non-payment, abusive conduct toward our team, requests
+to perform unlawful or policy-violating work, or repeated failure to supply required materials.
+
+After Termination
+We transfer ownership of paid Deliverables, hand over credentials for accounts registered in your name,
+and export your data in a standard format on request. We retain ownership of any asset that remains
+unpaid, along with our proprietary tools, internal documentation, and reusable code.
+
+Sections covering intellectual property, payment obligations, confidentiality, disclaimers, liability limits,
+and indemnification survive termination.
+Force Majeure
+Neither party carries liability for delays or failures caused by events outside reasonable control, including
+natural disasters, severe weather, power or internet outages, cyberattacks, labor disputes, pandemics,
+government action, or failures at major cloud and hosting providers. We notify you promptly and resume
+work as soon as conditions allow.
+
+
+
+Changes to These Terms
+We update these Terms as our services, technology, and legal obligations evolve. We post the revised
+version on this page and refresh the "Last Updated" date at the top.
+
+Material changes take effect 30 days after posting for active clients. Continued use of the Website or our
+Services after the effective date means you accept the revised Terms. Review this page periodically so
+you always know where you stand.
+
+
+
+Governing Law and Dispute Resolution
+The laws of the State of Texas govern these Terms, without regard to conflict of law principles. You and
+iTitans Digital submit to the exclusive jurisdiction of the state and federal courts located in Collin County,
+Texas.
+
+Before either party files a claim, both agree to attempt good faith resolution through direct negotiation
+for 30 days. Most disagreements resolve with a single conversation, and we prefer that route.
+
+
+
+Severability and Entire Agreement
+If a court finds any provision unenforceable, that provision is severed and the remaining Terms stay in full
+effect.
+
+These Terms, together with your signed Proposal and our Privacy Policy, form the entire agreement
+between you and iTitans Digital. They replace all prior discussions, emails, and proposals on the same
+subject. Our failure to enforce any provision does not waive our right to enforce it later.
+
+You may not assign this agreement without our written consent. We may assign it in connection with a
+merger, acquisition, or sale of assets.
+
+
+
+Contact iTitans Digital
+Questions about these Terms and Conditions? Reach our team directly.
+
+Phone: +1 (972) 922-9234
+
+Email: contact@ititansdigital.com
+
+Website: ititansdigital.com
+Prefer to talk through a project before you commit? Book a free consultation and we will walk you
+through scope, timeline, and pricing in plain language.
+

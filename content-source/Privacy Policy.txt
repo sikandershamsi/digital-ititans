@@ -1,0 +1,246 @@
+Privacy Policy Page Content | iTitans Digital
+SEO Metadata
+URL Slug: /privacy-policy/
+
+SEO Title Tag (58 characters): Privacy Policy | How iTitans Digital Protects Your Data
+
+Meta Description (152 characters): Read the iTitans Digital privacy policy. Learn what personal
+information we collect, how we use it, who we share it with, and how you control your data.
+
+Primary Keyword: privacy policy
+
+Secondary & Semantic Keywords: personal information, data collection, how we use your information,
+cookies and tracking technologies, third-party service providers, data security, your privacy rights, CCPA
+and CPRA rights, opt out of data sharing, data retention policy, children's privacy, Do Not Track, Global
+Privacy Control, digital marketing agency privacy practices
+
+
+
+Privacy Policy
+Effective Date: [Insert Date] Last Updated: [Insert Date]
+
+Your trust runs our business. iTitans Digital builds websites, mobile apps, and marketing campaigns for
+companies across the United States, and every one of those projects starts with a conversation that
+involves your information. This Privacy Policy explains exactly what we collect, why we collect it, who we
+share it with, and how you take control of it at any time.
+
+Read this page carefully. When you browse ititansdigital.com, submit a form, subscribe to our newsletter,
+or hire us for a project, you accept the practices described below.
+
+
+
+Who We Are
+iTitans Digital operates the website located at https://ititansdigital.com and delivers website
+development, WordPress and Shopify builds, ecommerce solutions, mobile app development, SEO, and
+digital marketing services. Our office sits in Frisco, Texas, and we serve clients nationwide.
+
+For any question about this policy, write to contact@ititansdigital.com or call +1 (972) 922-9234.
+
+
+
+Scope of This Privacy Policy
+This policy governs the personal information we collect through our website, our email and SMS
+communications, our social media profiles, and our client onboarding process. It does not govern the
+privacy practices of third-party platforms we link to, and it does not cover data that our clients ask us to
+process on their behalf under a separate service agreement.
+Information We Collect
+We keep data collection lean and purposeful. Depending on how you interact with us, we may gather the
+following:
+
+Information you provide directly
+●​ Contact details such as your name, business email address, phone number, and company name
+
+●​ Project details you share in a quote request, consultation booking, or discovery call
+
+●​ Billing and payment information processed through secure third-party gateways
+
+●​ Comments, reviews, and messages you post on our blog or send through our contact forms
+
+●​ Newsletter and marketing preferences, including SMS opt-in consent
+
+Information we collect automatically
+●​ IP address, browser type, device type, and operating system
+
+●​ Pages viewed, time on page, referring URLs, and exit pages
+
+●​ Clickstream behavior recorded by analytics tools and cookies
+
+●​ Approximate geographic location derived from your IP address
+
+Information from third parties
+●​ Analytics and advertising platforms such as Google Analytics, Google Ads, and Meta
+
+●​ Publicly available business directories and professional networks
+
+●​ Referral partners who introduce you to our team with your permission
+
+We never request sensitive categories of data such as Social Security numbers, biometric identifiers,
+precise geolocation, or health records.
+
+
+
+Cookies, Log Files, and Tracking Technologies
+Cookies are small text files your browser stores when you visit our site. We use them to remember your
+preferences, measure campaign performance, and keep the site secure.
+
+●​ Essential cookies keep core pages, forms, and security features working.
+
+●​ Analytics cookies show us which content earns attention so we can improve it.
+
+●​ Marketing cookies help us measure ad performance and reduce wasted spend.
+
+●​ Server log files record IP addresses and browser data for troubleshooting and fraud prevention.
+
+●​ Web beacons and pixels tell us whether an email was opened or a page was viewed.
+
+You control cookies through your browser settings at any time. Blocking cookies may limit some site
+features, though core pages will still load.
+How We Use Your Information
+We put your information to work in specific, limited ways:
+
+●​ Respond to quote requests, consultation bookings, and support inquiries
+
+●​ Deliver, maintain, and improve the services you hire us to perform
+
+●​ Process payments and issue invoices
+
+●​ Send project updates, performance reports, and account notifications
+
+●​ Share newsletters, case studies, and offers you asked to receive
+
+●​ Analyze site traffic and user behavior so we can strengthen content and UX
+
+●​ Detect fraud, block spam, and protect our systems from unauthorized access
+
+●​ Meet legal, tax, and regulatory obligations
+
+Every use above supports a legitimate business purpose. We do not repurpose your data for anything
+you would not reasonably expect.
+
+
+
+We Do Not Sell Your Personal Information
+iTitans Digital does not sell your personal information, and we do not rent or trade it for money or other
+value. We also do not share your personal data for cross-context behavioral advertising by third parties.
+
+Mobile phone numbers and SMS consent receive extra protection. We never share mobile opt-in data,
+text messaging originator information, or consent records with third parties or affiliates for their own
+marketing or promotional purposes. That restriction applies to every data category we hold.
+
+
+
+How We Share Information
+We disclose information only when a clear reason requires it:
+
+●​ Service providers: Hosting companies, email platforms, CRM tools, analytics vendors, and payment
+    processors who help us operate. Each one handles your data under contract and only for the task we
+    assign.
+
+●​ Legal compliance: Courts, regulators, or law enforcement when a valid legal request applies, or
+    when disclosure protects our rights, our clients, or public safety.
+
+●​ Business transfers: A merger, acquisition, financing round, or sale of assets may transfer data to a
+    successor entity, subject to this policy.
+
+●​ With your consent: Any other disclosure happens only after you approve it.
+Data Retention
+We keep personal information only as long as the purpose requires. Inquiry records stay on file while we
+evaluate and pursue the opportunity. Client project data remains available through the engagement and
+for a reasonable period afterward to support warranty, maintenance, and reference needs. Financial
+records follow the retention windows that tax and accounting laws set. Once a record loses its purpose,
+we delete it or anonymize it.
+
+
+
+Data Security
+We apply layered safeguards to protect your information, including SSL/TLS encryption across the site,
+access controls that limit internal visibility, firewalls, regular software updates, secure hosting
+infrastructure, and routine backups. Payment data travels directly to PCI-compliant processors and never
+sits on our servers.
+
+No system on the internet achieves perfect security. We work continuously to reduce risk, and we notify
+affected individuals promptly when a breach law requires it.
+
+
+
+Your Privacy Rights
+United States privacy laws give residents of many states meaningful control over personal data. Twenty
+states now enforce comprehensive consumer privacy statutes, including California, Texas, Virginia,
+Colorado, Connecticut, and Utah. We extend the following rights to every visitor, regardless of where you
+live:
+
+●​ Right to know: Ask what personal information we hold and how we use it.
+
+●​ Right to access: Request a copy of your data in a portable format.
+
+●​ Right to correct: Fix information that is inaccurate or incomplete.
+
+●​ Right to delete: Ask us to erase your data, subject to legal exceptions.
+
+●​ Right to opt out: Withdraw consent for marketing emails, SMS messages, targeted advertising, or
+    profiling.
+
+●​ Right to non-discrimination: Exercise any right above without losing service quality or pricing.
+
+How to submit a request: Email contact@ititansdigital.com with the subject line "Privacy Request" and
+tell us which right you want to exercise. We respond within 45 days and may extend once when a
+request requires additional time. We will tell you before we extend.
+
+Verification: We confirm your identity before we release or delete data. Expect us to match details you
+provide against records we already hold. Authorized agents may submit requests on your behalf with
+written permission.
+Opt-Out Signals and Do Not Track
+Our website honors Global Privacy Control (GPC) signals and other recognized universal opt-out
+preference signals transmitted by your browser or extension. We treat those signals as a valid request to
+stop targeted advertising and data sharing. You may also enable Do Not Track in your browser settings,
+and you may unsubscribe from any marketing email by clicking the link at the bottom of the message.
+
+
+
+Children's Privacy
+Our website and services target business decision-makers, not children. We do not knowingly collect
+personal information from anyone under 13, in line with the Children's Online Privacy Protection Act
+(COPPA). If you believe a child submitted information to us, contact us immediately and we will delete
+the record.
+
+
+
+Blog Comments, Forums, and Social Media
+Anything you post in a public comment section or on our social profiles becomes visible to others.
+WordPress stores your comment, IP address, and browser user agent string to help filter spam, and
+Gravatar may display an avatar based on your email hash. Protect yourself by keeping confidential details
+out of public posts. We take no responsibility for how others use information you choose to publish.
+
+
+
+Third-Party Links and Embedded Content
+Our pages link to partner sites, client portfolios, and embedded content such as videos, maps, and social
+feeds. Those third parties collect data under their own policies and behave as if you visited their site
+directly. Review their privacy notices before you interact with them. iTitans Digital does not control and
+does not accept liability for external privacy practices.
+
+
+
+International Visitors
+We operate from the United States, and we store and process data on servers located here. If you visit
+our site from outside the U.S., you consent to transferring your information to the United States, where
+privacy laws may differ from the laws in your country.
+
+
+
+Changes to This Privacy Policy
+Regulations shift, tools evolve, and our practices adapt with them. We may revise this policy at any time
+and will post the updated version on this page with a new effective date. Significant changes trigger a
+notice on our homepage or an email to subscribers. Continued use of our website after we post an
+update signals your acceptance.
+Contact Us
+Questions, concerns, or a privacy request? Reach the iTitans Digital team directly:
+
+Email: contact@ititansdigital.com
+
+Phone: +1 (972) 922-9234
+
+Address: Frisco, Texas, United States
+
+We answer every privacy inquiry and we answer it quickly.
+

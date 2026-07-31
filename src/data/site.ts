@@ -1,0 +1,33 @@
+export const site = {
+  name: "iTitans Digital",
+  legalName: "iTitans Digital",
+  tagline: "Performance Marketing & AI Automation Agency",
+  phone: "(972) 922-9234",
+  phoneHref: "tel:+19729229234",
+  email: "contact@ititansdigital.com",
+  emailHref: "mailto:contact@ititansdigital.com",
+  location: "Frisco, Texas",
+  address: "Frisco, TX, United States",
+  url: "https://ititansdigital.com",
+  founded: "2020",
+  parent: "iTitans",
+  trustBar: [
+    "In-House US-Focused Team",
+    "12+ Years Building Digital Products",
+    "Google Ads & Meta Certified Specialists",
+    "5.0 Average Client Rating",
+  ],
+  stats: [
+    { value: "12+", label: "Years delivering digital growth" },
+    { value: "500+", label: "Websites, stores & apps launched" },
+    { value: "40%", label: "Avg. CPA reduction in six months" },
+    { value: "1,000s", label: "Manual hours eliminated with AI" },
+  ],
+  nav: [
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Pricing", href: "/pricing" },
+    { label: "Contact", href: "/contact" },
+  ],
+} as const;
