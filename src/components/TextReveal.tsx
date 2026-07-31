@@ -20,18 +20,27 @@ export function TextReveal({
     const el = ref.current;
     if (!el) return;
 
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const reveal = () => {
       el.querySelectorAll(".word-reveal").forEach((node) => node.classList.add("visible"));
+    };
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      reveal();
+      return;
+    }
+
+    if (el.getBoundingClientRect().top < window.innerHeight * 0.9) {
+      requestAnimationFrame(reveal);
       return;
     }
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return;
-        el.querySelectorAll(".word-reveal").forEach((node) => node.classList.add("visible"));
+        reveal();
         observer.disconnect();
       },
-      { threshold: 0.2 },
+      { threshold: 0.15, rootMargin: "0px 0px -5% 0px" },
     );
     observer.observe(el);
     return () => observer.disconnect();

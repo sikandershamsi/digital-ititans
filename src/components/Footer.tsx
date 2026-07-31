@@ -16,10 +16,10 @@ export function Footer() {
               traffic into revenue and manual work into automated systems.
             </p>
             <div className="mt-6 space-y-2 text-sm text-white/70">
-              <a href={site.phoneHref} className="block transition hover:text-amber">
+              <a href={site.phoneHref} className="link-shift block transition hover:text-amber">
                 {site.phone}
               </a>
-              <a href={site.emailHref} className="block transition hover:text-amber">
+              <a href={site.emailHref} className="link-shift block transition hover:text-amber">
                 {site.email}
               </a>
               <p>{site.location}</p>
@@ -33,7 +33,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-sm text-white/70">
               {site.nav.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition hover:text-white">
+                  <Link href={item.href} className="link-shift transition hover:text-white">
                     {item.label}
                   </Link>
                 </li>
@@ -50,7 +50,7 @@ export function Footer() {
                 <li key={service.slug}>
                   <Link
                     href={`/services/${service.slug}`}
-                    className="transition hover:text-white"
+                    className="link-shift transition hover:text-white"
                   >
                     {service.title}
                   </Link>

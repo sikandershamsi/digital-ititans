@@ -55,18 +55,18 @@ export function Header() {
               >
                 <Link
                   href={item.href}
-                  className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white"
+                  className="nav-link rounded-lg px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white"
                 >
                   Services
                 </Link>
                 {servicesOpen && (
                   <div className="absolute left-1/2 top-full z-50 w-[min(520px,calc(100vw-2rem))] -translate-x-1/2 pt-3">
-                    <div className="grid grid-cols-2 gap-1 rounded-2xl border border-white/10 bg-ink-soft/95 p-3 shadow-2xl backdrop-blur-xl">
+                    <div className="menu-pop grid grid-cols-2 gap-1 rounded-2xl border border-white/10 bg-ink-soft/95 p-3 shadow-2xl backdrop-blur-xl">
                       {services.map((service) => (
                         <Link
                           key={service.slug}
                           href={`/services/${service.slug}`}
-                          className="rounded-xl px-3 py-2.5 text-sm text-white/75 transition hover:bg-white/5 hover:text-white"
+                          className="rounded-xl px-3 py-2.5 text-sm text-white/75 transition hover:bg-white/5 hover:text-white hover:translate-x-0.5"
                         >
                           {service.title}
                         </Link>
@@ -79,7 +79,7 @@ export function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="rounded-lg px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white"
+                className="nav-link rounded-lg px-3 py-2 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white"
               >
                 {item.label}
               </Link>

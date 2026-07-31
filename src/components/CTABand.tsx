@@ -23,7 +23,7 @@ export function CTABand({
       <div className="pointer-events-none absolute -right-6 top-4 hidden h-40 w-40 opacity-45 sm:block md:h-52 md:w-52">
         <LoopGif variant="chart" className="h-full w-full" />
       </div>
-      <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-5 md:px-8">
+      <div className="relative mx-auto max-w-4xl px-4 text-center cta-glow sm:px-5 md:px-8">
         <h2 className="font-display text-2xl font-semibold tracking-tight sm:text-3xl md:text-5xl">
           {title}
         </h2>

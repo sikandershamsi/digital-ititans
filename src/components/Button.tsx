@@ -57,11 +57,11 @@ export function Button({ href, children, variant = "primary", className = "" }: 
       href={href}
       onMouseMove={onMove}
       onMouseLeave={reset}
-      className={`magnetic-btn btn-sheen min-h-11 rounded-full px-5 py-3 text-sm font-semibold transition-colors duration-300 sm:px-6 sm:py-3.5 ${variants[variant]} ${className}`}
+      className={`magnetic-btn btn-sheen group min-h-11 rounded-full px-5 py-3 text-sm font-semibold transition-colors duration-300 sm:px-6 sm:py-3.5 ${variants[variant]} ${className}`}
     >
       <span className="magnetic-inner relative z-[1] text-center">
         {children}
-        <span aria-hidden className="transition-transform duration-300">
+        <span aria-hidden className="arrow-nudge">
           →
         </span>
       </span>

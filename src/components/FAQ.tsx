@@ -21,8 +21,8 @@ export function FAQ({ items }: { items: { q: string; a: string }[] }) {
                 {item.q}
               </span>
               <span
-                className={`mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-line text-teal transition ${
-                  isOpen ? "rotate-45 bg-teal text-white" : ""
+                className={`faq-plus mt-1 grid h-8 w-8 shrink-0 place-items-center rounded-full border border-line text-teal ${
+                  isOpen ? "rotate-45 bg-teal text-white border-teal" : ""
                 }`}
               >
                 +

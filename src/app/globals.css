@@ -376,7 +376,8 @@ h4,
   pointer-events: none;
 }
 
-.stat-glow.visible::before {
+.stat-glow.visible::before,
+.reveal.visible .stat-glow::before {
   opacity: 1;
   animation: glow-breathe 3.2s ease-in-out infinite;
 }
@@ -427,6 +428,196 @@ h4,
   image-rendering: auto;
   object-fit: cover;
   mixed-blend-mode: soft-light;
+}
+
+/* Lightweight one-shot / interaction motion (transform + opacity only) */
+.enter {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  animation: enter-up 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--enter-delay, 0ms);
+}
+
+.enter-x {
+  opacity: 0;
+  transform: translate3d(-14px, 0, 0);
+  animation: enter-x 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--enter-delay, 0ms);
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: 0.3rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.85;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.menu-pop {
+  animation: enter-up 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+  transform-origin: top center;
+}
+
+.arrow-nudge {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group:hover .arrow-nudge,
+.magnetic-btn:hover .arrow-nudge {
+  transform: translateX(4px);
+}
+
+.link-shift {
+  display: inline-block;
+  transition:
+    color 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.link-shift:hover,
+.link-shift:focus-visible {
+  transform: translateX(3px);
+}
+
+.title-accent {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin-top: 0.85rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--teal), var(--amber));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.12s;
+}
+
+.title-accent-enter {
+  animation: accent-grow 0.65s cubic-bezier(0.22, 1, 0.36, 1) 0.45s forwards;
+}
+
+.reveal.visible .title-accent {
+  transform: scaleX(1);
+}
+
+.icon-bob {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group:hover .icon-bob {
+  transform: translateY(-2px) scale(1.04);
+}
+
+.faq-plus {
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.cta-glow {
+  position: relative;
+}
+
+.cta-glow::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  width: min(28rem, 80%);
+  height: 8rem;
+  translate: -50% -50%;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(110, 193, 228, 0.18), transparent 68%);
+  opacity: 0.7;
+  pointer-events: none;
+  animation: soft-blink 4.5s ease-in-out infinite;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card-rise {
+    transition:
+      border-color 0.3s ease,
+      box-shadow 0.35s ease;
+  }
+
+  .card-rise:hover {
+    border-color: color-mix(in oklab, var(--teal) 35%, var(--line));
+    box-shadow: 0 18px 40px -28px rgba(3, 3, 28, 0.35);
+  }
+}
+
+/* Reves-inspired lightweight feature / integration motion */
+.spin-ring-slow {
+  animation: orbit-spin 14s linear infinite;
+}
+
+.spin-ring-rev {
+  animation: orbit-spin 10s linear infinite reverse;
+}
+
+.node-pulse-dot {
+  animation: soft-blink 2.4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.network-lines path {
+  stroke-dasharray: 6 8;
+  animation: dash-flow 8s linear infinite;
+}
+
+.gauge-needle {
+  animation: gauge-sweep 3.6s ease-in-out infinite;
+}
+
+.gauge-arc {
+  stroke-dasharray: 140;
+  stroke-dashoffset: 36;
+  animation: gauge-fill 3.6s ease-in-out infinite;
+}
+
+.leaderboard-scroll {
+  animation: leaderboard-nudge 4s ease-in-out infinite;
+}
+
+.handoff-beam {
+  position: relative;
+  overflow: hidden;
+}
+
+.handoff-beam::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.85), transparent);
+  transform: translateX(-120%);
+  animation: sheen-sweep 2.2s ease-in-out infinite;
+}
+
+.integration-tile {
+  animation: tile-float 5s ease-in-out infinite;
+}
+
+.dash-flow {
+  stroke-dasharray: 5 9;
+  animation: dash-flow 7s linear infinite;
 }
 
 @keyframes atmosphere-drift {
@@ -554,6 +745,82 @@ h4,
   }
 }
 
+@keyframes enter-up {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes enter-x {
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes soft-blink {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes accent-grow {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -80;
+  }
+}
+
+@keyframes gauge-sweep {
+  0%,
+  100% {
+    transform: rotate(-38deg);
+  }
+  50% {
+    transform: rotate(28deg);
+  }
+}
+
+@keyframes gauge-fill {
+  0%,
+  100% {
+    stroke-dashoffset: 48;
+  }
+  50% {
+    stroke-dashoffset: 18;
+  }
+}
+
+@keyframes leaderboard-nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes tile-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -569,8 +836,36 @@ h4,
   .orbit-spin-rev,
   .text-gradient-anim,
   .shimmer-border::before,
-  .stat-glow.visible::before {
+  .stat-glow.visible::before,
+  .reveal.visible .stat-glow::before,
+  .enter,
+  .enter-x,
+  .soft-blink,
+  .cta-glow::before,
+  .title-accent-enter,
+  .menu-pop,
+  .spin-ring-slow,
+  .spin-ring-rev,
+  .node-pulse-dot,
+  .network-lines path,
+  .gauge-needle,
+  .gauge-arc,
+  .leaderboard-scroll,
+  .handoff-beam::after,
+  .integration-tile,
+  .dash-flow {
     animation: none !important;
+  }
+
+  .enter,
+  .enter-x {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .title-accent,
+  .title-accent-enter {
+    transform: none !important;
   }
 
   .reveal,
@@ -587,7 +882,11 @@ h4,
 
   .spotlight-card,
   .magnetic-btn,
-  .magnetic-btn .magnetic-inner {
+  .magnetic-btn .magnetic-inner,
+  .arrow-nudge,
+  .link-shift,
+  .icon-bob,
+  .nav-link::after {
     transform: none !important;
     transition: none !important;
   }
