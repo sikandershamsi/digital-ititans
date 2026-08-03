@@ -4,6 +4,7 @@ export const contentMarketing: Service = {
   slug: "content-marketing",
   title: "Content Marketing",
   shortTitle: "Content",
+  category: "Core Services",
   metaTitle: "Content Marketing Services | SEO Agency | iTitans Digital",
   metaDescription:
     "Grow your business with SEO-focused content marketing services. We create strategies, blogs, landing pages, and website content that drive qualified leads.",

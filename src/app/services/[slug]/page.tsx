@@ -252,37 +252,39 @@ export default async function ServiceDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-paper py-14 sm:py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
-          <Reveal>
-            <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
-              Results & Proof
-            </h2>
-            <span className="title-accent" />
-            <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate">
-              {service.caseStudiesIntro}
-            </p>
-          </Reveal>
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
-            {service.caseStudies.map((item, index) => (
-              <Reveal key={item.title} delay={index * 45} variant="blur">
-                <article className="tile-lift h-full rounded-3xl border border-line bg-paper-elevated p-7">
-                  <h3 className="font-display text-xl font-semibold text-ink">{item.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-slate">{item.description}</p>
-                  <ul className="mt-5 space-y-2">
-                    {item.results.map((result) => (
-                      <li key={result} className="flex gap-2 text-sm text-ink-muted">
-                        <span className="text-teal">→</span>
-                        {result}
-                      </li>
-                    ))}
-                  </ul>
-                </article>
-              </Reveal>
-            ))}
+      {service.caseStudies?.length ? (
+        <section className="bg-paper py-14 sm:py-20 md:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
+            <Reveal>
+              <h2 className="font-display text-3xl font-semibold tracking-tight md:text-4xl">
+                Results & Proof
+              </h2>
+              <span className="title-accent" />
+              <p className="mt-5 max-w-3xl text-base leading-relaxed text-slate">
+                {service.caseStudiesIntro}
+              </p>
+            </Reveal>
+            <div className="mt-12 grid gap-5 md:grid-cols-2">
+              {service.caseStudies.map((item, index) => (
+                <Reveal key={item.title} delay={index * 45} variant="blur">
+                  <article className="tile-lift h-full rounded-3xl border border-line bg-paper-elevated p-7">
+                    <h3 className="font-display text-xl font-semibold text-ink">{item.title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-slate">{item.description}</p>
+                    <ul className="mt-5 space-y-2">
+                      {item.results.map((result) => (
+                        <li key={result} className="flex gap-2 text-sm text-ink-muted">
+                          <span className="text-teal">→</span>
+                          {result}
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : null}
 
       <section className="section-wash py-14 sm:py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">

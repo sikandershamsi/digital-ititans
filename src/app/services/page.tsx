@@ -3,7 +3,7 @@ import { Button } from "@/components/Button";
 import { CTABand } from "@/components/CTABand";
 import { Reveal } from "@/components/Reveal";
 import { ServiceCard } from "@/components/ServiceCard";
-import { services } from "@/data/services";
+import { getServicesByCategory } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Digital Marketing & Development Services",
@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 };
 
 export default function ServicesPage() {
+  const serviceGroups = getServicesByCategory();
+
   return (
     <>
       <section className="relative overflow-hidden bg-ink pb-14 pt-28 text-white sm:pb-20 sm:pt-32 md:pb-28 md:pt-40">
@@ -40,17 +42,25 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="section-wash py-14 sm:py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
-          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-            {services.map((service, index) => (
-              <Reveal key={service.slug} delay={index * 50} variant={index % 2 === 0 ? "up" : "scale"}>
-                <ServiceCard service={service} index={index} />
-              </Reveal>
-            ))}
+      {serviceGroups.map((group) => (
+        <section key={group.category} className="section-wash py-14 sm:py-20 md:py-28">
+          <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
+            <Reveal>
+              <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
+                {group.category}
+              </h2>
+              <span className="title-accent" />
+            </Reveal>
+            <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+              {group.services.map((service, index) => (
+                <Reveal key={service.slug} delay={index * 50} variant={index % 2 === 0 ? "up" : "scale"}>
+                  <ServiceCard service={service} index={index} />
+                </Reveal>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ))}
 
       <CTABand />
     </>

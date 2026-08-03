@@ -14,6 +14,20 @@ const icons: Record<string, string> = {
   "social-media-marketing": "⬡",
   "local-seo": "◍",
   "website-design-development": "▣",
+  "seo-by-industry": "▤",
+  "b2b-seo": "◫",
+  "google-ads-management": "◈",
+  "seo-services": "◇",
+  "ecommerce-seo": "▥",
+  "enterprise-seo": "◆",
+  "saas-seo": "◉",
+  "lead-gen-seo": "◎",
+  "technical-seo": "⚙",
+  "seo-audits": "◍",
+  "seo-packages": "▣",
+  "seo-consulting": "✦",
+  "seo-copywriting": "✎",
+  "ai-seo": "✦",
 };
 
 const loops: Record<string, "pulse" | "radar" | "chat" | "chart"> = {
@@ -25,6 +39,20 @@ const loops: Record<string, "pulse" | "radar" | "chat" | "chart"> = {
   "social-media-marketing": "pulse",
   "local-seo": "radar",
   "website-design-development": "pulse",
+  "seo-by-industry": "radar",
+  "b2b-seo": "chart",
+  "google-ads-management": "chart",
+  "seo-services": "chart",
+  "ecommerce-seo": "pulse",
+  "enterprise-seo": "chart",
+  "saas-seo": "chat",
+  "lead-gen-seo": "chart",
+  "technical-seo": "radar",
+  "seo-audits": "radar",
+  "seo-packages": "pulse",
+  "seo-consulting": "chat",
+  "seo-copywriting": "pulse",
+  "ai-seo": "chat",
 };
 
 export function ServiceCard({ service }: { service: Service; index?: number }) {

@@ -4,6 +4,7 @@ export const localMapOptimization: Service = {
   slug: "local-map-optimization",
   title: "Local Map Optimization",
   shortTitle: "Local Maps",
+  category: "Core Services",
   metaTitle: "Local Map Optimization Services | iTitans Digital",
   metaDescription:
     "Increase local visibility with Local Map Optimization Services. Improve Google Maps rankings, attract nearby customers, and generate qualified leads.",

@@ -4,12 +4,13 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Logo } from "@/components/Logo";
 import { site } from "@/data/site";
-import { services } from "@/data/services";
+import { getServicesByCategory } from "@/data/services";
 
 export function Header() {
   const [open, setOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const serviceGroups = getServicesByCategory();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -60,16 +61,25 @@ export function Header() {
                   Services
                 </Link>
                 {servicesOpen && (
-                  <div className="absolute left-1/2 top-full z-50 w-[min(520px,calc(100vw-2rem))] -translate-x-1/2 pt-3">
-                    <div className="menu-pop grid grid-cols-2 gap-1 rounded-2xl border border-white/10 bg-ink-soft/95 p-3 shadow-2xl backdrop-blur-xl">
-                      {services.map((service) => (
-                        <Link
-                          key={service.slug}
-                          href={`/services/${service.slug}`}
-                          className="rounded-xl px-3 py-2.5 text-sm text-white/75 transition hover:bg-white/5 hover:text-white hover:translate-x-0.5"
-                        >
-                          {service.title}
-                        </Link>
+                  <div className="absolute left-1/2 top-full z-50 w-[min(880px,calc(100vw-2rem))] -translate-x-1/2 pt-3">
+                    <div className="menu-pop grid max-h-[75vh] grid-cols-3 gap-2 overflow-y-auto rounded-2xl border border-white/10 bg-ink-soft/95 p-4 shadow-2xl backdrop-blur-xl">
+                      {serviceGroups.map((group) => (
+                        <div key={group.category}>
+                          <p className="px-3 pb-2 text-xs font-semibold uppercase tracking-[0.16em] text-white/40">
+                            {group.category}
+                          </p>
+                          <div className="flex flex-col">
+                            {group.services.map((service) => (
+                              <Link
+                                key={service.slug}
+                                href={`/services/${service.slug}`}
+                                className="rounded-xl px-3 py-2 text-sm text-white/75 transition hover:bg-white/5 hover:text-white hover:translate-x-0.5"
+                              >
+                                {service.title}
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -131,16 +141,22 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <p className="mt-4 px-3 text-xs uppercase tracking-[0.2em] text-white/40">Services</p>
-            {services.map((service) => (
-              <Link
-                key={service.slug}
-                href={`/services/${service.slug}`}
-                onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-3 text-sm text-white/70"
-              >
-                {service.title}
-              </Link>
+            {serviceGroups.map((group) => (
+              <div key={group.category}>
+                <p className="mt-4 px-3 text-xs uppercase tracking-[0.2em] text-white/40">
+                  {group.category}
+                </p>
+                {group.services.map((service) => (
+                  <Link
+                    key={service.slug}
+                    href={`/services/${service.slug}`}
+                    onClick={() => setOpen(false)}
+                    className="rounded-xl px-3 py-3 text-sm text-white/70"
+                  >
+                    {service.title}
+                  </Link>
+                ))}
+              </div>
             ))}
             <a
               href={site.phoneHref}

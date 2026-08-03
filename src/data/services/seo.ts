@@ -4,6 +4,7 @@ export const seo: Service = {
   slug: "seo",
   title: "SEO",
   shortTitle: "SEO",
+  category: "Core Services",
   metaTitle: "SEO Services | Search Engine Optimization Agency - iTitans Digital",
   metaDescription:
     "SEO services built to grow organic traffic, improve rankings and generate qualified leads. Technical, on-page, off-page and local SEO from iTitans Digital.",

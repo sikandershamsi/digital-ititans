@@ -4,6 +4,7 @@ export const socialMediaMarketing: Service = {
   slug: "social-media-marketing",
   title: "Social Media Marketing",
   shortTitle: "Social",
+  category: "Core Services",
   metaTitle: "Social Media Marketing Services | Social Media Marketing Agency – iTitans Digital",
   metaDescription:
     "Social media marketing services that grow engaged audiences, build brand awareness and turn followers into customers. Strategy, content, paid social and reporting from iTitans Digital.",

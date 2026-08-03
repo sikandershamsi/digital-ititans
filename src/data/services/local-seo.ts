@@ -4,6 +4,7 @@ export const localSeo: Service = {
   slug: "local-seo",
   title: "Local SEO",
   shortTitle: "Local SEO",
+  category: "Core Services",
   metaTitle: "Local SEO Services | Local SEO Agency | iTitans Digital",
   metaDescription:
     "Grow your business with expert Local SEO Services. Improve local rankings, attract qualified customers, and increase leads with proven strategies.",

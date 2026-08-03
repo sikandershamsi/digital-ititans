@@ -1,7 +1,14 @@
+export type ServiceCategory =
+  | "Core Services"
+  | "SEO Services & Specialties"
+  | "Paid Advertising"
+  | "Website Design";
+
 export type Service = {
   slug: string;
   title: string;
   shortTitle: string;
+  category: ServiceCategory;
   metaTitle: string;
   metaDescription: string;
   hero: string;
@@ -23,8 +30,8 @@ export type Service = {
   benefitsIntro: string;
   benefits: { title: string; description: string }[];
   strategyCta: { title: string; body: string; cta: string };
-  caseStudiesIntro: string;
-  caseStudies: { title: string; description: string; results: string[] }[];
+  caseStudiesIntro?: string;
+  caseStudies?: { title: string; description: string; results: string[] }[];
   audiencesIntro: string;
   audiences: { title: string; description: string }[];
   faqs: { q: string; a: string }[];

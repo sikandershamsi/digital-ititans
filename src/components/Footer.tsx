@@ -1,9 +1,11 @@
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
 import { site } from "@/data/site";
-import { services } from "@/data/services";
+import { getServicesByCategory } from "@/data/services";
 
 export function Footer() {
+  const serviceGroups = getServicesByCategory();
+
   return (
     <footer className="relative overflow-hidden bg-ink text-white">
       <div className="pointer-events-none absolute inset-0 hero-grid opacity-40" />
@@ -45,18 +47,27 @@ export function Footer() {
             <h3 className="text-xs font-semibold uppercase tracking-[0.2em] text-white/40">
               Services
             </h3>
-            <ul className="mt-4 grid gap-2.5 sm:grid-cols-2 text-sm text-white/70">
-              {services.map((service) => (
-                <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="link-shift transition hover:text-white"
-                  >
-                    {service.title}
-                  </Link>
-                </li>
+            <div className="mt-4 grid gap-6 sm:grid-cols-2">
+              {serviceGroups.map((group) => (
+                <div key={group.category}>
+                  <p className="text-xs font-medium uppercase tracking-[0.1em] text-white/35">
+                    {group.category}
+                  </p>
+                  <ul className="mt-2.5 space-y-2.5 text-sm text-white/70">
+                    {group.services.map((service) => (
+                      <li key={service.slug}>
+                        <Link
+                          href={`/services/${service.slug}`}
+                          className="link-shift transition hover:text-white"
+                        >
+                          {service.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               ))}
-            </ul>
+            </div>
           </div>
         </div>
 

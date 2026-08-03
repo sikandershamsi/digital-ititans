@@ -4,6 +4,7 @@ export const aiChatbot: Service = {
   slug: "ai-chatbot",
   title: "AI Chatbot Integrations",
   shortTitle: "AI Chatbot",
+  category: "Core Services",
   metaTitle: "AI Chatbot Integration Services USA | iTitans Digital",
   metaDescription:
     "AI chatbot integration services for USA businesses. We build conversational chatbots that answer questions, capture leads and support customers 24/7.",

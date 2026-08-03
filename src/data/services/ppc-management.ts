@@ -4,6 +4,7 @@ export const ppcManagement: Service = {
   slug: "ppc-management",
   title: "PPC Management",
   shortTitle: "PPC",
+  category: "Core Services",
   metaTitle: "PPC Management Services | Google Ads | iTitans Digital",
   metaDescription:
     "Increase qualified leads and maximize ROI with expert PPC management services. We manage Google Ads campaigns that deliver measurable business growth.",

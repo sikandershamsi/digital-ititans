@@ -4,6 +4,7 @@ export const websiteDesignDevelopment: Service = {
   slug: "website-design-development",
   title: "Website Design & Development",
   shortTitle: "Web Design",
+  category: "Core Services",
   metaTitle: "Website Design and Development | iTitans Digital",
   metaDescription:
     "Build fast, SEO-friendly websites with our Website Design and Development Services. We create responsive websites that generate leads and drive growth.",
