@@ -135,15 +135,16 @@ export default async function ServiceDetailPage({ params }: Props) {
             {service.intro.points?.length ? (
               <ul className="mt-8 space-y-3">
                 {service.intro.points.map((point, index) => (
-                  <li
-                    key={point.slice(0, 40)}
-                    className="flex gap-3 text-sm leading-relaxed text-ink-muted"
-                    style={{ ["--enter-delay" as string]: `${index * 40}ms` }}
-                  >
-                    <span className="mt-1 text-teal" aria-hidden>
-                      ●
-                    </span>
-                    <span>{point}</span>
+                  <li key={point.slice(0, 40)}>
+                    <Reveal
+                      delay={index * 60}
+                      className="flex gap-3 text-sm leading-relaxed text-ink-muted"
+                    >
+                      <span className="mt-1 text-teal" aria-hidden>
+                        ●
+                      </span>
+                      <span>{point}</span>
+                    </Reveal>
                   </li>
                 ))}
               </ul>
@@ -155,10 +156,15 @@ export default async function ServiceDetailPage({ params }: Props) {
                 Every Engagement Includes
               </p>
               <ul className="mt-6 space-y-3">
-                {service.includes.map((item) => (
-                  <li key={item} className="flex gap-3 text-sm text-ink-muted">
-                    <span className="text-teal">✓</span>
-                    {item}
+                {service.includes.map((item, index) => (
+                  <li key={item}>
+                    <Reveal
+                      delay={80 + index * 60}
+                      className="flex gap-3 text-sm text-ink-muted"
+                    >
+                      <span className="text-teal">✓</span>
+                      {item}
+                    </Reveal>
                   </li>
                 ))}
               </ul>
@@ -335,14 +341,14 @@ export default async function ServiceDetailPage({ params }: Props) {
           <h2 className="font-display text-2xl font-semibold">Related Services</h2>
           <div className="mt-6 flex flex-wrap gap-3">
             {related.map((item, index) => (
-              <Link
-                key={item.slug}
-                href={`/services/${item.slug}`}
-                className="related-chip enter rounded-full border border-line bg-paper-elevated px-5 py-2.5 text-sm font-medium text-ink"
-                style={{ ["--enter-delay" as string]: `${index * 60}ms` }}
-              >
-                {item.title}
-              </Link>
+              <Reveal key={item.slug} delay={index * 60} variant="scale">
+                <Link
+                  href={`/services/${item.slug}`}
+                  className="related-chip rounded-full border border-line bg-paper-elevated px-5 py-2.5 text-sm font-medium text-ink"
+                >
+                  {item.title}
+                </Link>
+              </Reveal>
             ))}
           </div>
         </div>
