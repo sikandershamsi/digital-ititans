@@ -1,16 +1,17 @@
-import { Button } from "./Button";
+import { WebsiteCta } from "./WebsiteCta";
 import { LoopGif } from "./LoopGif";
+import { Button } from "./Button";
 import { site } from "@/data/site";
 
 export function CTABand({
-  title = "Ready to Grow Faster With Improved Efficiency?",
-  body = "Send us your website and your biggest bottleneck. A senior strategist will review your search visibility, ad efficiency, conversion path, and automation potential on a 30-minute call.",
-  primary = "Get My Free Growth Plan",
-  primaryHref = "/contact",
+  title = "Sound good? Let's get started.",
+  body = "Enter your website and a senior strategist will review your search visibility, ad efficiency, conversion path, and automation potential.",
+  primary = "Get a Free Quote",
 }: {
   title?: string;
   body?: string;
   primary?: string;
+  /** @deprecated Kept for call-site compatibility; website CTA always goes to /contact */
   primaryHref?: string;
 }) {
   return (
@@ -30,9 +31,11 @@ export function CTABand({
         <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/70 sm:mt-5 sm:text-base md:text-lg">
           {body}
         </p>
-        <div className="mt-8 flex cta-stack w-full max-w-md flex-col items-stretch justify-center gap-3 sm:mx-auto sm:max-w-none sm:flex-row sm:items-center sm:gap-4">
-          <Button href={primaryHref}>{primary}</Button>
-          <Button href={site.phoneHref} variant="ghost">
+        <div className="mt-8">
+          <WebsiteCta buttonLabel={primary} variant="dark" />
+        </div>
+        <div className="mt-6 flex justify-center">
+          <Button href={site.phoneHref} variant="ghost" className="w-full sm:w-auto">
             Call {site.phone}
           </Button>
         </div>

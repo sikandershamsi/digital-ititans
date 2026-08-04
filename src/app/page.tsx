@@ -9,7 +9,9 @@ import { Reveal } from "@/components/Reveal";
 import { ServiceCard } from "@/components/ServiceCard";
 import { SpotlightCard } from "@/components/SpotlightCard";
 import { TextReveal } from "@/components/TextReveal";
+import { WebsiteCta } from "@/components/WebsiteCta";
 import { homeFaqs, industries, processSteps, testimonials } from "@/data/about";
+import { whyMetrics, whyPillars } from "@/data/home";
 import { services } from "@/data/services";
 import { site } from "@/data/site";
 
@@ -49,15 +51,15 @@ export default function HomePage() {
             marketing, custom development, and business AI automation under one accountable team.
           </p>
           <div
-            className="enter mt-9 flex cta-stack flex-col gap-3 sm:flex-row sm:items-center sm:gap-4"
+            className="enter mt-9 w-full max-w-xl"
             style={{ ["--enter-delay" as string]: "240ms" }}
           >
-            <Button href="/contact">
-              Get My Free Growth Plan
-            </Button>
-            <Button href="/contact" variant="ghost">
-              Talk to a Strategist
-            </Button>
+            <WebsiteCta buttonLabel="Get a Free Quote" variant="dark" />
+            <div className="mt-4 flex justify-start">
+              <Button href="/contact" variant="ghost" className="w-full sm:w-auto">
+                Talk to a Strategist
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -74,28 +76,95 @@ export default function HomePage() {
 
       <section className="section-wash py-14 sm:py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-5 md:px-8">
-          <Reveal variant="clip">
-            <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-deep sm:text-sm">
-              Why iTitans Digital
-            </p>
-            <span className="title-accent" />
-            <h2 className="mt-3 max-w-3xl font-display text-2xl font-semibold tracking-tight sm:mt-4 sm:text-3xl md:text-5xl">
-              Marketing That Performs. Automation That Compounds.
-            </h2>
-          </Reveal>
-          <Reveal delay={120}>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate">
-              Most agencies sell you channels. We sell you outcomes, then build the infrastructure
-              that protects them. Our strategists acquire demand through SEO, paid search, paid
-              social, and email. Our engineers build the websites that convert. Our automation team
-              removes the bottlenecks behind the scenes.
-            </p>
-            <div className="mt-8">
-              <Button href="/about" variant="light">
-                See How We Work
-              </Button>
+          <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16 xl:gap-20">
+            <div>
+              <Reveal variant="clip">
+                <p className="text-xs font-semibold uppercase tracking-[0.22em] text-teal-deep sm:text-sm">
+                  Why iTitans Digital
+                </p>
+                <span className="title-accent" />
+                <h2 className="mt-3 max-w-xl font-display text-2xl font-semibold tracking-tight sm:mt-4 sm:text-3xl md:text-5xl">
+                  Marketing That Performs. Automation That Compounds.
+                </h2>
+              </Reveal>
+              <Reveal delay={100}>
+                <p className="mt-6 max-w-xl text-base leading-relaxed text-slate sm:text-lg">
+                  Most agencies sell you channels. We sell you outcomes, then build the
+                  infrastructure that protects them. Strategists acquire demand, engineers build what
+                  converts it, and automation removes the bottlenecks behind the scenes.
+                </p>
+                <p className="mt-4 max-w-xl text-base leading-relaxed text-slate sm:text-lg">
+                  Growth stalls in the gaps—more traffic with slow follow-up, or automation starved of
+                  qualified leads. We close both at once and report on the metrics your CFO tracks.
+                </p>
+                <div className="mt-8">
+                  <Button href="/about" variant="light">
+                    See How We Work
+                  </Button>
+                </div>
+              </Reveal>
             </div>
-          </Reveal>
+
+            <div className="lg:pt-2">
+              <Reveal delay={140} variant="scale">
+                <div className="relative overflow-hidden rounded-[1.75rem] border border-line bg-paper-elevated/80 px-6 py-7 sm:px-8 sm:py-9">
+                  <div
+                    className="pointer-events-none absolute inset-0 opacity-70"
+                    style={{
+                      background:
+                        "radial-gradient(ellipse 80% 60% at 100% 0%, color-mix(in oklab, var(--amber) 18%, transparent), transparent 55%), radial-gradient(ellipse 70% 50% at 0% 100%, color-mix(in oklab, var(--teal) 12%, transparent), transparent 50%)",
+                    }}
+                    aria-hidden
+                  />
+                  <div className="relative">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-teal-deep/70">
+                      One accountable team
+                    </p>
+                    <ul className="mt-6 space-y-0">
+                      {whyPillars.map((pillar, index) => (
+                        <li
+                          key={pillar.title}
+                          className={`flex gap-4 py-5 ${
+                            index > 0 ? "border-t border-line" : "pt-0"
+                          } ${index === whyPillars.length - 1 ? "pb-0" : ""}`}
+                        >
+                          <span className="font-display text-sm font-semibold text-amber-deep">
+                            {pillar.label}
+                          </span>
+                          <div>
+                            <h3 className="font-display text-lg font-semibold tracking-tight text-ink">
+                              {pillar.title}
+                            </h3>
+                            <p className="mt-1.5 text-sm leading-relaxed text-slate">
+                              {pillar.body}
+                            </p>
+                          </div>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="mt-7 border-t border-line pt-6">
+                      <p className="text-xs font-semibold uppercase tracking-[0.18em] text-ink-muted">
+                        Measured on
+                      </p>
+                      <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+                        {whyMetrics.map((metric) => (
+                          <li
+                            key={metric}
+                            className="text-sm font-medium text-ink/80"
+                          >
+                            <span className="mr-2 inline-block text-amber-deep" aria-hidden>
+                              ▸
+                            </span>
+                            {metric}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { ContactForm } from "@/components/ContactForm";
 import { Reveal } from "@/components/Reveal";
 import { site } from "@/data/site";
@@ -56,7 +57,13 @@ export default function ContactPage() {
             </div>
           </Reveal>
           <Reveal delay={100}>
-            <ContactForm source="Contact Page" />
+            <Suspense
+              fallback={
+                <div className="min-h-[28rem] animate-pulse rounded-3xl border border-line bg-paper-elevated" />
+              }
+            >
+              <ContactForm source="Contact Page" />
+            </Suspense>
           </Reveal>
         </div>
       </section>

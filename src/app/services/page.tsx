@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Button } from "@/components/Button";
 import { CTABand } from "@/components/CTABand";
 import { Reveal } from "@/components/Reveal";
 import { ServiceCard } from "@/components/ServiceCard";
+import { WebsiteCta } from "@/components/WebsiteCta";
 import { getServicesByCategory } from "@/data/services";
 
 export const metadata: Metadata = {
@@ -36,8 +36,8 @@ export default function ServicesPage() {
             Engage us for one service or run your entire digital program through a single accountable
             team.
           </p>
-          <div className="enter mt-8" style={{ ["--enter-delay" as string]: "240ms" }}>
-            <Button href="/contact">Get My Free Growth Plan</Button>
+          <div className="enter mt-8 max-w-xl" style={{ ["--enter-delay" as string]: "240ms" }}>
+            <WebsiteCta buttonLabel="Get a Free Quote" variant="dark" />
           </div>
         </div>
       </section>

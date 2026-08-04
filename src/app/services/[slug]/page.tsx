@@ -4,6 +4,7 @@ import { Button } from "@/components/Button";
 import { CTABand } from "@/components/CTABand";
 import { FAQ } from "@/components/FAQ";
 import { Reveal } from "@/components/Reveal";
+import { WebsiteCta } from "@/components/WebsiteCta";
 import { getAllServiceSlugs, getService, services } from "@/data/services";
 import Link from "next/link";
 
@@ -59,10 +60,8 @@ function MidCta({
         >
           {body}
         </p>
-        <div className="mt-7">
-          <Button href="/contact" variant={dark ? "secondary" : "primary"}>
-            {cta}
-          </Button>
+        <div className="mt-7 max-w-xl">
+          <WebsiteCta buttonLabel={cta} variant={dark ? "dark" : "light"} />
         </div>
       </div>
     </Reveal>
@@ -109,13 +108,15 @@ export default async function ServiceDetailPage({ params }: Props) {
             </p>
           ) : null}
           <div
-            className="enter mt-8 flex flex-col gap-4 sm:flex-row"
+            className="enter mt-8 max-w-xl"
             style={{ ["--enter-delay" as string]: "260ms" }}
           >
-            <Button href="/contact">{service.primaryCta}</Button>
-            <Button href="/pricing" variant="ghost">
-              {service.secondaryCta}
-            </Button>
+            <WebsiteCta buttonLabel={service.primaryCta} variant="dark" />
+            <div className="mt-4">
+              <Button href="/pricing" variant="ghost" className="w-full sm:w-auto">
+                {service.secondaryCta}
+              </Button>
+            </div>
           </div>
         </div>
       </section>

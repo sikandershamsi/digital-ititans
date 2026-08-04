@@ -1,9 +1,14 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useState } from "react";
 import { site } from "@/data/site";
+import { normalizeWebsiteUrl } from "@/components/WebsiteCta";
 
 export function ContactForm({ source = "Contact" }: { source?: string }) {
+  const searchParams = useSearchParams();
+  const addressParam = searchParams.get("address") ?? searchParams.get("website") ?? "";
+  const initialWebsite = addressParam ? normalizeWebsiteUrl(addressParam) : "";
   const [status, setStatus] = useState<"idle" | "sent">("idle");
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -33,7 +38,12 @@ export function ContactForm({ source = "Contact" }: { source?: string }) {
         <Field label="Full name" name="name" required />
         <Field label="Work email" name="email" type="email" required />
         <Field label="Phone" name="phone" type="tel" />
-        <Field label="Company website" name="website" placeholder="https://" />
+        <Field
+          label="Company website"
+          name="website"
+          placeholder="https://"
+          defaultValue={initialWebsite}
+        />
       </div>
       <label className="block">
         <span className="mb-2 block text-sm font-medium text-ink">How can we help?</span>
@@ -64,12 +74,14 @@ function Field({
   type = "text",
   required,
   placeholder,
+  defaultValue,
 }: {
   label: string;
   name: string;
   type?: string;
   required?: boolean;
   placeholder?: string;
+  defaultValue?: string;
 }) {
   return (
     <label className="block">
@@ -79,6 +91,7 @@ function Field({
         type={type}
         required={required}
         placeholder={placeholder}
+        defaultValue={defaultValue}
         className="w-full rounded-2xl border border-line bg-paper px-4 py-3 text-ink outline-none transition focus:border-teal"
       />
     </label>

@@ -1,3 +1,28 @@
+export const whyPillars = [
+  {
+    label: "01",
+    title: "Acquire demand",
+    body: "SEO, paid search, paid social, and email run against profit targets—not vanity clicks.",
+  },
+  {
+    label: "02",
+    title: "Convert demand",
+    body: "Websites, storefronts, and apps engineered for speed, clarity, and tracked conversion.",
+  },
+  {
+    label: "03",
+    title: "Automate operations",
+    body: "Lead routing, quoting, reporting, and support agents that remove weekly bottlenecks.",
+  },
+] as const;
+
+export const whyMetrics = [
+  "Cost per acquisition",
+  "Return on ad spend",
+  "Pipeline velocity",
+  "Hours saved",
+] as const;
+
 export const loveFeatures = [
   {
     id: "crm",

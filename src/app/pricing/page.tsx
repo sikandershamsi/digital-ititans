@@ -3,6 +3,7 @@ import { Button } from "@/components/Button";
 import { CTABand } from "@/components/CTABand";
 import { PricingCard } from "@/components/PricingCard";
 import { Reveal } from "@/components/Reveal";
+import { WebsiteCta } from "@/components/WebsiteCta";
 import {
   appPricing,
   dedicatedTeam,
@@ -33,11 +34,13 @@ export default function PricingPage() {
           <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">
             {pricingIntro.summary}
           </p>
-          <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-            <Button href="/contact">Get a Free Quote</Button>
-            <Button href="/contact" variant="ghost">
-              Book a Strategy Call
-            </Button>
+          <div className="mt-8 max-w-xl">
+            <WebsiteCta buttonLabel="Get a Free Quote" variant="dark" />
+            <div className="mt-4">
+              <Button href="/contact" variant="ghost" className="w-full sm:w-auto">
+                Book a Strategy Call
+              </Button>
+            </div>
           </div>
         </div>
       </section>
