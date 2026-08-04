@@ -181,7 +181,7 @@ export const contentMarketing: Service = {
     "Our content marketing services have helped businesses across IT, SaaS, staffing, education, and enterprise industries improve search visibility, strengthen brand authority, and generate qualified organic traffic.",
   caseStudies: [
     {
-      title: "Global Smart Hands (GSH)",
+      title: "Global Smart Hands",
       description:
         "Industry: IT Infrastructure & Smart Hands Services. Developed SEO service pages and ongoing blog content targeting global smart hands, remote IT support, and data center services.",
       results: [
@@ -191,19 +191,19 @@ export const contentMarketing: Service = {
       ],
     },
     {
-      title: "Pakistan Aeronautical Complex (PAC)",
+      title: "Professional Academy of Commerce",
       description:
-        "Industry: Aerospace & Defense. Created website and service page content focused on aerospace capabilities, institutional communication, and technical services.",
+        "Industry: Education. Created SEO-focused website content, program pages, blogs, and student-focused content to improve organic visibility and strengthen topical authority.",
       results: [
-        "Improved website content structure",
-        "Enhanced search relevance for core topics",
-        "Increased engagement with optimized pages",
+        "Improved visibility for education-related search terms",
+        "Expanded organic traffic across academic programs",
+        "Strengthened authority through SEO-driven content",
       ],
     },
     {
-      title: "Titan Talent Services (TTS)",
+      title: "Titan Talent Services",
       description:
-        "Industry: Recruitment & Staffing. Produced SEO service pages and recruitment content targeting staffing, executive search, and Recruitment Process Outsourcing (RPO).",
+        "Industry: Recruitment & Staffing. Produced SEO service pages and recruitment content targeting staffing, executive search, and Recruitment Process Outsourcing.",
       results: [
         "Expanded organic keyword reach",
         "Improved service page visibility",
